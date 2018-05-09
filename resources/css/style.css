@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box; /* Allow the box size specified with border and padding inclusive */
+  margin: 0;              /* Reset the browser's default value */
+  padding: 0;             /* Reset the browser's default value */
+}
+
+/* Base font size to which the rem refers to */
+html {
+  font-size: 18px;
+}
+
+/* Base font family */
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1 {
+  font-family: 'Cormorant', serif;
+  font-weight: 700; /* Thickest weight for Cormorant Garamond */
+  padding: 0 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0 0.5rem;
+}
+
+/* Make sure the image size is set by its container. */
+figure {
+  overflow: hidden;
+}
+
+/* Make the image responsive */
+figure img {
+  width: 100%; /* So that the image scales with the figure element */
+}
+
+/* Media queries */
+@media only screen and (max-width: 480px) {
+
+}
