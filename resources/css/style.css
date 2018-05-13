@@ -21,6 +21,11 @@ h1 {
   padding: 0.75rem 0.75rem; /* Half of the line-height 1.5 */
 }
 
+h3 {
+  color: brown ;
+  font-size: 1rem;
+  font-weight: 700;
+}
 p {
   font-size: 1rem;
   line-height: 1.5;
