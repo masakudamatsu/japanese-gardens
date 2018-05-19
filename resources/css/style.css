@@ -30,6 +30,11 @@ h3 {
   padding-right: 1rem; /* Side-alignment with paragraphs */
   padding-top: 0.5rem; /* Make the new section separated enough from the previous paragraph while still keeping connected to it */
 }
+
+h3.photo-heading {
+  padding-bottom: 0.25rem;
+}
+
 p {
   font-size: 1rem;
   line-height: 1.5;
