@@ -18,21 +18,20 @@ h1 {
   font-family: 'Cormorant', serif;
   font-size: 2rem;
   font-weight: 700; /* Thickest weight for Cormorant Garamond */
-  padding: 0.75rem 0.75rem; /* Half of the line-height 1.5 */
+  padding: 1rem 1rem; /* Rectangle frame */
 }
 
 h3 {
   color: brown ;
   font-size: 1rem;
   font-weight: 700;
+  padding-left: 1rem; /* Side-alignment with paragraphs */
+  padding-right: 1rem; /* Side-alignment with paragraphs */
 }
 p {
   font-size: 1rem;
   line-height: 1.5;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem; /* Half of the line-height 1.5 */
-  padding-right: 0.75rem; /* Half of the line-height 1.5 */
-  padding-top: 0.5rem; /* Half of the line-height 1.5 - 0.25rem of the top space above the text */
+  padding: 0.75rem 1rem; /* Rectangle frame (top and bottom padding is effectively 1rem because line-height: 1.5 creates a space of 0.25rem above and below the text) */
 }
 
 /* Make sure the image size is set by its container. */
