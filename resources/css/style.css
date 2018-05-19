@@ -21,14 +21,21 @@ h1 {
   padding: 1rem 1rem; /* Rectangle frame */
 }
 
-h3 {
+h2, h3 {
   color: brown ;
-  font-size: 1rem;
   font-weight: 700;
   padding-bottom: 0;
   padding-left: 1rem; /* Side-alignment with paragraphs */
   padding-right: 1rem; /* Side-alignment with paragraphs */
   padding-top: 0.5rem; /* Make the new section separated enough from the previous paragraph while still keeping connected to it */
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 h3.photo-heading {
