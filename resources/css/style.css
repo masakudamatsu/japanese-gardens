@@ -41,6 +41,10 @@ p {
   padding: 0.75rem 1rem; /* Rectangle frame (top and bottom padding is effectively 1rem because line-height: 1.5 creates a space of 0.25rem above and below the text) */
 }
 
+p.figure-caption {
+  padding-top: 0;
+}
+
 /* Make sure the image size is set by its container. */
 figure {
   overflow: hidden;
