@@ -16,6 +16,8 @@ body {
 
 /* Make the image size responsive while not exceeding its original size */
 figure img {
+  display: block;
+  height: auto;
   max-width: 100%;
 }
 
@@ -62,6 +64,11 @@ h1 {
   overflow: hidden;
 }
 
+.content__image--five-sets {
+  align-items: center; /* Make the center of the image always be shown */
+  display: flex;
+  justify-content: center; /* Make the center of the image always be shown */
+  max-height: 180px; /* Max-height allows the image to be shorter if the aspect ratio implies so */
 }
 
 /* Parallax */
