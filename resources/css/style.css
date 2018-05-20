@@ -71,8 +71,12 @@ h1 {
   max-height: 180px; /* Max-height allows the image to be shorter if the aspect ratio implies so */
 }
 
-.content__image--unity img{
+.content__image--unity img {
   border-bottom: 1px solid white;
+}
+
+.content__image--unity img:last-child {
+  border-bottom: none;
 }
 
 /* Parallax */
