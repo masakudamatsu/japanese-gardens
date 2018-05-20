@@ -69,6 +69,13 @@ h1 {
   display: flex;
   justify-content: center; /* Make the center of the image always be shown */
   max-height: 180px; /* Max-height allows the image to be shorter if the aspect ratio implies so */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.content__image--unity {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .content__image--unity img{
