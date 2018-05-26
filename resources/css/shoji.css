@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box; /* Allow the box size specified with border and padding inclusive */
+  margin: 0;              /* Reset the browser's default value */
+  padding: 0;             /* Reset the browser's default value */
+}
+
+/* Base font size to which the rem refers to */
+html {
+  font-size: 16px;
+}
+
+/* Base font family */
+body {
+}
+
+.shoji {
+  background-color: rgb(100,100,100);
+  border: 1rem solid rgb(100,100,100);
+  display: flex;
+  flex-direction: column;
+  height: 80rem; /* 15 x 5 + 1 x 4 + 1*/
+  justify-content: space-around;
+  margin: auto;
+  width: 28rem; /* 3 x 7 + 1 x 6 + 1*/
+}
+
+.shoji__row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shoji__cell {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 15rem;
+  width: 3rem;
+}
+
+/* Tablets */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Desktops */
+@media only screen and (min-width: 1000px) {
+
+}
