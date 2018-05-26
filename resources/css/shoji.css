@@ -11,11 +11,11 @@ html {
 
 /* Base font family */
 body {
-  background-color: #704815;
   display: flex;
   justify-content: center;
 }
 .wall {
+  background-color: #704815;
   height: 80rem; /* Same as .shoji */
   position: absolute;
   width: 28rem; /* Same as .shoji */
