@@ -11,6 +11,9 @@ html {
 
 /* Base font family */
 body {
+  background-color: #704815;
+  display: flex;
+  justify-content: center;
 }
 
 .shoji {
@@ -20,7 +23,6 @@ body {
   flex-direction: column;
   height: 80rem; /* 15 x 5 + 1 x 4 + 0.5 x 2 */
   justify-content: space-around;
-  margin: auto;
   padding: 1rem;
   width: 28rem; /* 3 x 7 + 1 x 6 + 0.5 x 2 */
 }
