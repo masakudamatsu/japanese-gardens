@@ -15,6 +15,22 @@ body {
   display: flex;
   justify-content: center;
 }
+.wall {
+  height: 80rem; /* Same as .shoji */
+  position: absolute;
+  width: 28rem; /* Same as .shoji */
+  z-index: -1;
+}
+
+.wall--left {
+  left: 0px;
+  top: 0px;
+}
+
+.wall--right {
+  right: 0px;
+  top: 0px;
+}
 
 .shoji {
   background-color: rgb(200,200,200);
