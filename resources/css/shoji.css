@@ -16,9 +16,9 @@ body {
 }
 .wall {
   background-color: #704815;
-  height: 80rem; /* Same as .shoji */
+  height: 82rem; /* Same as .shoji */
   position: absolute;
-  width: 28rem; /* Same as .shoji */
+  width: 30rem; /* Same as .shoji */
   z-index: -1;
 }
 
@@ -33,27 +33,25 @@ body {
 }
 
 .shoji {
-  background-color: rgb(200,200,200);
-  border: 1px solid rgb(255,255,255);
+  border: 1rem solid rgb(200,200,200);
   display: flex;
   flex-direction: column;
-  height: 80rem; /* 15 x 5 + 1 x 4 + 0.5 x 2 */
+  height: 82rem; /* 15 x 5 + 1 x 4 + 1.5 x 2 */
   justify-content: space-around;
-  padding: 1rem;
-  width: 28rem; /* 3 x 7 + 1 x 6 + 0.5 x 2 */
+  width: 30rem; /* 3 x 7 + 1 x 6 + 1.5 x 2  */
 }
 
 .shoji__row {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .shoji__cell {
   background-color: rgba(255, 255, 255, 0.9);
-  height: 15rem;
-  width: 3rem;
+  border: 0.5rem solid rgb(200,200,200);
+  height: 16rem;
+  width: 4rem;
 }
 
 /* Tablets */
