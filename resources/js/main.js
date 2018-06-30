@@ -12,32 +12,23 @@ $(document).ready(function() {
     fade: true
   });
 
-  // ScrollMagic
+  // Pin the carousel while the first paragraph is scrolled beneath it.
+  // Step 1: First paragraph's height as % of the viewport height
+  var viewportHeight = $(window).height();
+  var paragraphHeight = $('#first-paragraph').outerHeight(); // including padding
+  var heightPercentage = (paragraphHeight / viewportHeight)*100;
+  var durationValue = heightPercentage.toString() + '%';
+  // Step 2: Initiate ScrollMagic
   var controller = new ScrollMagic.Controller();
-  // Pin the carousel
+  // Step 3: Pin the carousel
   var pinCarousel = new ScrollMagic.Scene({
     triggerElement: '.parallax',
-    triggerHook: 0
+    triggerHook: 0,
+    duration: durationValue // See above for how it's calculated
   })
   .setPin('.parallax', {pushFollowers: false})
-  .addIndicators()    // For debugging
+  // .addIndicators()    // For debugging
   .addTo(controller);
-
-  // // Parallax
-  // var parallaxElements = $('.parallax'),
-  //     parallaxQuantity = parallaxElements.length;
-  // $(window).on('scroll', function() {
-  //   window.requestAnimationFrame(function() {
-  //     for (var i = 0; i < parallaxQuantity; i++) {
-  //       var currentElement = parallaxElements.eq(i);
-  //       // Record how much has been scrolled (the number of pixels that are hidden from view above)
-  //       var scrolled = $(window).scrollTop();
-  //       currentElement.css({
-  //         'transform': 'translate3d(0, '+scrolled * 1 + 'px, 0)'
-  //       });
-  //     }
-  //   });
-  // });
 
 }); // End of jQuery
 
