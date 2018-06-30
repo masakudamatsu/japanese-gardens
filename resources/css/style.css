@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box; /* Allow the box size specified with border and padding inclusive */
+  margin: 0;              /* Reset the browser's default value */
+  padding: 0;             /* Reset the browser's default value */
+}
+
+/* Base font size to which the rem refers to */
+html {
+  font-size: 18px;
+}
+
+/* Base font family */
+body {
+  font-family: 'Cormorant Garamond', serif;
+  height: 100%;
+}
+
+/* Make the image size responsive while not exceeding its original size */
+figure img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Cormorant', serif;
+  font-size: 2rem;
+  font-weight: 700; /* Thickest weight for Cormorant Garamond */
+  padding: 1rem 1rem; /* Rectangle frame */
+}
+
+.content__title {
+  color: brown ;
+  font-weight: 700;
+  padding-bottom: 0;
+  padding-left: 1rem; /* Side-alignment with paragraphs */
+  padding-right: 1rem; /* Side-alignment with paragraphs */
+  padding-top: 0.5rem; /* Make the new section separated enough from the previous paragraph while still keeping connected to it */
+}
+
+.content__title--section {
+  font-size: 1.5rem;
+}
+
+.content__title--subsection {
+  font-size: 1rem;
+}
+
+.content__title--photo {
+  padding-bottom: 0.25rem;
+}
+
+.content__text {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.75rem 1rem; /* Rectangle frame (top and bottom padding is effectively 1rem because line-height: 1.5 creates a space of 0.25rem above and below the text) */
+}
+
+.content__text--caption {
+  padding-top: 0;
+}
+
+/* Make sure the image size is set by its container. */
+.content__image {
+  overflow: hidden;
+}
+
+.content__image--five-sets {
+  align-items: center; /* Make the center of the image always be shown */
+  display: flex;
+  justify-content: center; /* Make the center of the image always be shown */
+  max-height: 180px; /* Max-height allows the image to be shorter if the aspect ratio implies so */
+}
+
+.content__image--unity img {
+  border-bottom: 1px solid white;
+}
+
+.content__image--unity img:last-child {
+  border-bottom: none;
+}
+
+/* Parallax */
+.parallax {
+  background-color: white;
+}
+
+/* Media queries */
+@media only screen and (max-width: 480px) {
+
+}
