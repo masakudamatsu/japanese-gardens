@@ -12,6 +12,7 @@ html {
 /* Base font family */
 body {
   font-family: 'Cormorant Garamond', serif;
+  height: 100%;
 }
 
 /* Make the image size responsive while not exceeding its original size */
