@@ -12,6 +12,8 @@ $(document).ready(function() {
     fade: true
   });
 
+  // ScrollMagic
+  var controller = new ScrollMagic.Controller();
   
 
   // Parallax
