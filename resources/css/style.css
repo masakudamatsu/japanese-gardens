@@ -42,10 +42,11 @@ h1 {
 .content__title {
   color: brown ;
   font-weight: 700;
+  line-height: 1;
   padding-bottom: 0;
-  padding-top: 0.5rem; /* Make the new section separated enough from the previous paragraph while still keeping connected to it */
   padding-left: 1.5rem; /* Side-alignment with paragraphs */
   padding-right: 1.5rem; /* Side-alignment with paragraphs */
+  padding-top: 1.25rem; /* 1.5rem space between image bottom and text top: 1.25 + (x-1)/2, where x is line height */
 }
 
 .content__title--section {
