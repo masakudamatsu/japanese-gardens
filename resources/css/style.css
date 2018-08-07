@@ -71,7 +71,9 @@ h1 {
 }
 
 .content__text--firstparagraph {
-  padding-top: 1.25rem; /* To achieve the space of line-height above the first paragraph. Calculated by x - (x-1)/2, where x is line-height and (x-1/2) is the space taken above the letters. */
+  padding-top: 1.25rem; /* 1.5rem space between image bottom and text top: 1.25 + (x-1)/2, where x is line height */
+}
+
 .content__text--belowtitle {
   padding-top: 1.05rem; /* 1.3rem space between section title bottom and text top: 1.05 + (x-1)/2, where x is line height */
 }
