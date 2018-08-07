@@ -90,6 +90,7 @@ h1 {
 .content__image--floorplan {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  padding-top: 0.5rem; /* The space between lines */
 }
 .content__image--five-sets {
   align-items: center; /* Make the center of the image always be shown */
