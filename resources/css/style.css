@@ -87,6 +87,10 @@ h1 {
   overflow: hidden;
 }
 
+.content__image--floorplan {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .content__image--five-sets {
   align-items: center; /* Make the center of the image always be shown */
   display: flex;
