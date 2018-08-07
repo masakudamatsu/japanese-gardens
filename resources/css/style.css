@@ -63,7 +63,8 @@ h1 {
 .content__text {
   font-size: 1rem;
   line-height: 1.5;
-  padding: 0.75rem 1rem; /* Rectangle frame (top and bottom padding is effectively 1rem because line-height: 1.5 creates a space of 0.25rem above and below the text) */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .content__text--caption {
