@@ -43,9 +43,9 @@ h1 {
   color: brown ;
   font-weight: 700;
   padding-bottom: 0;
-  padding-left: 1rem; /* Side-alignment with paragraphs */
-  padding-right: 1rem; /* Side-alignment with paragraphs */
   padding-top: 0.5rem; /* Make the new section separated enough from the previous paragraph while still keeping connected to it */
+  padding-left: 1.5rem; /* Side-alignment with paragraphs */
+  padding-right: 1.5rem; /* Side-alignment with paragraphs */
 }
 
 .content__title--section {
