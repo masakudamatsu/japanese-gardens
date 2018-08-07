@@ -13,22 +13,22 @@ $(document).ready(function() {
 
 // Parallax
 
-var parallaxElements = $('.parallax'),
-    parallaxQuantity = parallaxElements.length;
-
-$(window).on('scroll', function() {
-  window.requestAnimationFrame(function() {
-    for (var i = 0; i < parallaxQuantity; i++) {
-      var currentElement = parallaxElements.eq(i);
-      // Record how much has been scrolled (the number of pixels that are hidden from view above)
-      var scrolled = $(window).scrollTop();
-
-      currentElement.css({
-        'transform': 'translate3d(0, '+scrolled * 1 + 'px, 0)'
-      });
-    }
-  });
-});
+// var parallaxElements = $('.parallax'),
+//     parallaxQuantity = parallaxElements.length;
+//
+// $(window).on('scroll', function() {
+//   window.requestAnimationFrame(function() {
+//     for (var i = 0; i < parallaxQuantity; i++) {
+//       var currentElement = parallaxElements.eq(i);
+//       // Record how much has been scrolled (the number of pixels that are hidden from view above)
+//       var scrolled = $(window).scrollTop();
+//
+//       currentElement.css({
+//         'transform': 'translate3d(0, '+scrolled * 1 + 'px, 0)'
+//       });
+//     }
+//   });
+// });
 
 // jQuery
 $(document).ready(function() {
