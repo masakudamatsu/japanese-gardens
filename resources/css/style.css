@@ -46,19 +46,17 @@ h1 {
   padding-bottom: 0;
   padding-left: 1.5rem; /* Side-alignment with paragraphs */
   padding-right: 1.5rem; /* Side-alignment with paragraphs */
-  padding-top: 1.25rem; /* 1.5rem space between image bottom and text top: 1.25 + (x-1)/2, where x is line height */
 }
 
 .content__title--section {
   font-size: 1.5rem;
+  padding-top: 1.25rem; /* to set 1.5rem space between sections. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
 .content__title--subsection {
-  font-size: 1rem;
-}
-
-.content__title--photo {
-  padding-bottom: 0.5rem; /* Make the space between the title and the image below as the same as the space between text lines */
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem; /* To set 0.5rem space between the subsection title and the image below so that they are part of a paragraph. */
+  padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
 .content__title--optical-align {
