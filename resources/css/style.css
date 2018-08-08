@@ -58,7 +58,7 @@ h1 {
 }
 
 .content__title--photo {
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem; /* Make the space between the title and the image below as the same as the space between text lines */
 }
 
 .content__text {
@@ -79,7 +79,7 @@ h1 {
 }
 
 .content__text--caption {
-  padding-top: 0;
+  padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
 }
 
 /* Make sure the image size is set by its container. */
