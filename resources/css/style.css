@@ -61,6 +61,10 @@ h1 {
   padding-bottom: 0.5rem; /* Make the space between the title and the image below as the same as the space between text lines */
 }
 
+.content__title--optical-align {
+  margin-left: -0.05rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
+}
+
 .content__text {
   font-size: 1rem;
   line-height: 1.5;
