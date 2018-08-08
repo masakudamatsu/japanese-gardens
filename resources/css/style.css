@@ -78,7 +78,7 @@ figure img {
 }
 
 .content__text--firstparagraph {
-  padding-top: 1.25rem; /* 1.5rem space between image bottom and text top: 1.25 + (x-1)/2, where x is line height */
+  padding-top: 1.05rem; /* 1.3rem space between image bottom and text top: 1.05 + (x-1)/2, where x is line height */
 }
 
 .content__text--belowtitle {
