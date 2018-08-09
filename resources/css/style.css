@@ -45,7 +45,7 @@ figure img {
   padding-top: 1.5rem;
 }
 
-.header__title {
+.page-title {
   font-family: 'Cormorant', serif;
   font-size: 2rem;
   font-weight: 700; /* Thickest weight for Cormorant Garamond */
