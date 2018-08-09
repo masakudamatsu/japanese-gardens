@@ -37,6 +37,10 @@ figure img {
   padding-right: 1.5rem;
 }
 
+.article__title--optically-aligned {
+  margin-left: -0.05rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */  
+}
+
 .section--after-box {
   padding-top: 1.5rem;
 }
@@ -84,14 +88,7 @@ figure img {
   padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
 }
 
-.content__title--optical-align {
-  margin-left: -0.05rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
 }
-
-}
-
-
-
 
 /* Make sure the image size is set by its container. */
 .content__image {
