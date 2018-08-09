@@ -94,7 +94,7 @@ figure img {
 /* Paragraphs (i.e. subsections) */
 
 .paragraph {
-  padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */  
+  padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
 .paragraph__title {
@@ -116,28 +116,28 @@ figure img {
 }
 
 /* Make sure the image size is set by its container. */
-.content__floorplan {
+.figure__image--floorplan {
   border: 1px solid #f2f2f2;
 }
 
-.content__caption {
+.figure__caption--floorplan {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1;
 }
 
-.content__image--five-sets {
+.figure__container--five-sets {
   align-items: center; /* Make the center of the image always be shown */
   display: flex;
   justify-content: center; /* Make the center of the image always be shown */
   max-height: 180px; /* Max-height allows the image to be shorter if the aspect ratio implies so */
 }
 
-.content__image--unity img {
+.figure__container--unity img {
   border-bottom: 1px solid white;
 }
 
-.content__image--unity img:last-child {
+.figure__container--unity img:last-child {
   border-bottom: none;
 }
 
