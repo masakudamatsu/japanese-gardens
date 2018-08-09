@@ -91,7 +91,6 @@ figure img {
 
 .paragraph__title {
   font-size: 1.2rem;
-  padding-bottom: 0.5rem; /* To set 0.5rem space between the subsection title and the image below so that they are part of a paragraph. */
   padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
@@ -101,14 +100,17 @@ figure img {
   padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
 }
 
+.paragraph__figure {
+  margin-top: 0.5rem; /* padding-top does not work as the height of the image is set to include padding */
+}
+
+.paragraph__figure--after-text {
+  margin-top: 0.25rem; /* The space between lines */
+}
 
 /* Make sure the image size is set by its container. */
 .content__image {
   overflow: hidden;
-}
-
-.content__image--floorplan {
-  padding-top: 0.5rem; /* The space between lines */
 }
 
 .content__floorplan {
