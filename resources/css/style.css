@@ -52,15 +52,13 @@ figure img {
   padding-top: 1.25rem; /* to set 1.5rem space between sections. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
-.content__title {
+.section__title {
   color: brown ;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  padding-bottom: 0;
 }
 
-.content__title--section {
-  font-size: 1.5rem;
 }
 
 .content__title--subsection {
