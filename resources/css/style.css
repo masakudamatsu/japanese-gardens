@@ -51,7 +51,6 @@ figure img {
   font-weight: 700; /* Thickest weight for Cormorant Garamond */
   line-height: 1;
   margin: 0;
-  padding-bottom: 1.3rem;
 }
 
 .heading {
@@ -82,6 +81,10 @@ figure img {
 
 .section__paragraph--first { /* Below the section title or the image */
   padding-top: 1.05rem; /* 1.3rem space between image bottom and text top: 1.05 + (x-1)/2, where x is line height */
+}
+
+.section__figure--first { /* Below the title or another figure */
+  padding-top: 1.3rem;
 }
 
 /* Paragraphs (i.e. subsections) */
