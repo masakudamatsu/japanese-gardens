@@ -43,14 +43,14 @@ figure img {
   margin-left: -0.05rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
 }
 
-/* Page title */
+/* Titles */
 
 .page-title {
   font-family: 'Cormorant', serif;
   font-size: 2rem;
   font-weight: 700; /* Thickest weight for Cormorant Garamond */
   line-height: 1;
-  margin: 0;
+  margin: 0; /* To deal with a bug (GitHub Issue #21) */
 }
 
 .heading {
@@ -144,11 +144,6 @@ figure img {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding-top: 1.25rem;
-}
-
-/* Parallax */
-.parallax {
-  background-color: white;
 }
 
 /* Tablets (480px is the widest mobile device, according to https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png) */
