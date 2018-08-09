@@ -39,12 +39,12 @@ figure img {
 /* Side margins */
 
 .item--margined {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .item--optically-aligned {
-  margin-left: -0.05rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
+  margin-left: 1.45rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
 }
 
 /* Titles */
@@ -54,7 +54,8 @@ figure img {
   font-size: 2rem;
   font-weight: 700; /* Thickest weight for Cormorant Garamond */
   line-height: 1;
-  margin: 0; /* To deal with a bug (GitHub Issue #21) */
+  margin-bottom: 0; /* To deal with a bug (GitHub Issue #21) */
+  margin-top: 0;    /* To deal with a bug (GitHub Issue #21) */
 }
 
 .heading {
@@ -146,8 +147,6 @@ figure img {
   line-height: 1.5;
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
   padding-top: 1.25rem;
 }
 
