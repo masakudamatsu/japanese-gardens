@@ -26,6 +26,10 @@ body {
 }
 
 /* Make the image size responsive while not exceeding its original size */
+figure {
+  overflow: hidden;
+}
+
 figure img {
   display: block;
   height: auto;
@@ -109,10 +113,6 @@ figure img {
 }
 
 /* Make sure the image size is set by its container. */
-.content__image {
-  overflow: hidden;
-}
-
 .content__floorplan {
   border: 1px solid #f2f2f2;
 }
