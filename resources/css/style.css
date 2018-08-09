@@ -32,6 +32,9 @@ figure img {
   max-width: 100%;
 }
 
+.article__element--margined {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .section--after-box {
@@ -45,8 +48,6 @@ figure img {
   line-height: 1;
   margin: 0;
   padding-bottom: 1.3rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 .section--after-paragraph {
   padding-top: 1.25rem; /* to set 1.5rem space between sections. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
@@ -56,8 +57,6 @@ figure img {
   font-weight: 700;
   line-height: 1;
   padding-bottom: 0;
-  padding-left: 1.5rem; /* Side-alignment with paragraphs */
-  padding-right: 1.5rem; /* Side-alignment with paragraphs */
 }
 
 .content__title--section {
@@ -78,8 +77,6 @@ figure img {
   font-size: 1rem;
   line-height: 1.5;
   padding-bottom: 0;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   padding-top: 0.8rem; /* 1.3rem space between paragraphs: 0.8 + (x-1), where x is line-height */
 }
 
@@ -101,8 +98,6 @@ figure img {
 }
 
 .content__image--floorplan {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   padding-top: 0.5rem; /* The space between lines */
 }
 
