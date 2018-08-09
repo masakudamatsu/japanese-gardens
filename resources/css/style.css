@@ -32,6 +32,12 @@ figure img {
   max-width: 100%;
 }
 
+}
+
+.section--after-box {
+  padding-top: 1.5rem;
+}
+
 .header__title {
   font-family: 'Cormorant', serif;
   font-size: 2rem;
@@ -41,7 +47,8 @@ figure img {
   padding-bottom: 1.3rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 1.5rem;
+.section--after-paragraph {
+  padding-top: 1.25rem; /* to set 1.5rem space between sections. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
 .content__title {
@@ -55,7 +62,6 @@ figure img {
 
 .content__title--section {
   font-size: 1.5rem;
-  padding-top: 1.25rem; /* to set 1.5rem space between sections. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
 .content__title--subsection {
