@@ -59,6 +59,14 @@ figure img {
   line-height: 1;
 }
 
+.section__paragraph {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: 0.8rem; /* 1.3rem space between paragraphs: 0.8 + (x-1), where x is line-height */
+}
+
+.section__paragraph--first { /* Below the section title or the image */
+  padding-top: 1.05rem; /* 1.3rem space between image bottom and text top: 1.05 + (x-1)/2, where x is line height */
 }
 
 .content__title--subsection {
@@ -74,17 +82,8 @@ figure img {
 .content__text {
   font-size: 1rem;
   line-height: 1.5;
-  padding-bottom: 0;
-  padding-top: 0.8rem; /* 1.3rem space between paragraphs: 0.8 + (x-1), where x is line-height */
 }
 
-.content__text--firstparagraph {
-  padding-top: 1.05rem; /* 1.3rem space between image bottom and text top: 1.05 + (x-1)/2, where x is line height */
-}
-
-.content__text--belowtitle {
-  padding-top: 1.05rem; /* 1.3rem space between section title bottom and text top: 1.05 + (x-1)/2, where x is line height */
-}
 
 .content__text--caption {
   padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
