@@ -93,9 +93,12 @@ figure img {
 
 /* Paragraphs (i.e. subsections) */
 
+.paragraph {
+  padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */  
+}
+
 .paragraph__title {
   font-size: 1.2rem;
-  padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
 .paragraph__lines {
