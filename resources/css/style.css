@@ -26,102 +26,119 @@ body {
 }
 
 /* Make the image size responsive while not exceeding its original size */
+figure {
+  overflow: hidden;
+}
+
 figure img {
   display: block;
   height: auto;
   max-width: 100%;
 }
 
-.header__title {
+/* Side margins */
+
+.item--margined {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.item--optically-aligned {
+  margin-left: 1.45rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
+}
+
+/* Titles */
+
+.page-title {
   font-family: 'Cormorant', serif;
   font-size: 2rem;
   font-weight: 700; /* Thickest weight for Cormorant Garamond */
   line-height: 1;
-  margin: 0;
-  padding-bottom: 1.3rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1.5rem;
+  margin-bottom: 0; /* To deal with a bug (GitHub Issue #21) */
+  margin-top: 0;    /* To deal with a bug (GitHub Issue #21) */
 }
 
-.content__title {
+.heading {
   color: brown ;
   font-weight: 700;
   line-height: 1;
-  padding-bottom: 0;
-  padding-left: 1.5rem; /* Side-alignment with paragraphs */
-  padding-right: 1.5rem; /* Side-alignment with paragraphs */
 }
 
-.content__title--section {
-  font-size: 1.5rem;
+/* Sections */
+
+.section--after-box {
+  padding-top: 1.5rem;
+}
+
+.section--after-paragraph {
   padding-top: 1.25rem; /* to set 1.5rem space between sections. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
-.content__title--subsection {
-  font-size: 1.2rem;
-  padding-bottom: 0.5rem; /* To set 0.5rem space between the subsection title and the image below so that they are part of a paragraph. */
-  padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
+.section__title {
+  font-size: 1.5rem;
 }
 
-.content__title--optical-align {
-  margin-left: -0.05rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
-}
-
-.content__text {
+.section__paragraph {
   font-size: 1rem;
   line-height: 1.5;
-  padding-bottom: 0;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   padding-top: 0.8rem; /* 1.3rem space between paragraphs: 0.8 + (x-1), where x is line-height */
 }
 
-.content__text--firstparagraph {
+.section__paragraph--first { /* Below the section title or the image */
   padding-top: 1.05rem; /* 1.3rem space between image bottom and text top: 1.05 + (x-1)/2, where x is line height */
 }
 
-.content__text--belowtitle {
-  padding-top: 1.05rem; /* 1.3rem space between section title bottom and text top: 1.05 + (x-1)/2, where x is line height */
+.section__figure--first { /* Below the title or another figure */
+  padding-top: 1.3rem;
 }
 
-.content__text--caption {
+/* Paragraphs (i.e. subsections) */
+
+.paragraph {
+  padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
+}
+
+.paragraph__title {
+  font-size: 1.2rem;
+}
+
+.paragraph__lines {
+  font-size: 1rem;
+  line-height: 1.5;
   padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
 }
 
+.paragraph__figure {
+  margin-top: 0.5rem; /* padding-top does not work as the height of the image is set to include padding */
+}
+
+.paragraph__figure--after-text {
+  margin-top: 0.25rem; /* The space between lines */
+}
+
 /* Make sure the image size is set by its container. */
-.content__image {
-  overflow: hidden;
-}
-
-.content__image--floorplan {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem; /* The space between lines */
-}
-
-.content__floorplan {
+.figure__image--floorplan {
   border: 1px solid #f2f2f2;
 }
 
-.content__caption {
+.figure__caption--floorplan {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1;
 }
 
-.content__image--five-sets {
+.figure__container--five-sets {
   align-items: center; /* Make the center of the image always be shown */
   display: flex;
   justify-content: center; /* Make the center of the image always be shown */
   max-height: 180px; /* Max-height allows the image to be shorter if the aspect ratio implies so */
 }
 
-.content__image--unity img {
+.figure__container--unity img {
   border-bottom: 1px solid white;
 }
 
-.content__image--unity img:last-child {
+.figure__container--unity img:last-child {
   border-bottom: none;
 }
 
@@ -130,14 +147,7 @@ figure img {
   line-height: 1.5;
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
   padding-top: 1.25rem;
-}
-
-/* Parallax */
-.parallax {
-  background-color: white;
 }
 
 /* Tablets (480px is the widest mobile device, according to https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png) */
