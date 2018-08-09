@@ -34,12 +34,12 @@ figure img {
 
 /* Side margins */
 
-.article__element--margined {
+.item--margined {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.article__title--optically-aligned {
+.item--optically-aligned {
   margin-left: -0.05rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
 }
 
@@ -54,6 +54,12 @@ figure img {
   padding-bottom: 1.3rem;
 }
 
+.heading {
+  color: brown ;
+  font-weight: 700;
+  line-height: 1;
+}
+
 /* Sections */
 
 .section--after-box {
@@ -65,10 +71,7 @@ figure img {
 }
 
 .section__title {
-  color: brown ;
   font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1;
 }
 
 .section__paragraph {
@@ -84,10 +87,7 @@ figure img {
 /* Paragraphs (i.e. subsections) */
 
 .paragraph__title {
-  color: brown ;
   font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1;
   padding-bottom: 0.5rem; /* To set 0.5rem space between the subsection title and the image below so that they are part of a paragraph. */
   padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
