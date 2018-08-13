@@ -36,6 +36,18 @@ figure img {
   max-width: 100%;
 }
 
+/* Header and Footer */
+.ichimonji {
+  background-color: #BFC0C4; /* fall back for Opera Mini */
+  background-image:
+    radial-gradient(circle closest-side, transparent 90%, #f2dba6 91%, transparent),
+    radial-gradient(circle closest-side, #BFC0C4 90%, #f2dba6 91%, #BFC0C4); /* Higher than these percentages will create noticeable dots at the intersection of four circles */
+  background-size: 0.7rem 0.7rem; /* Circles won't be recognizable if smaller than these values. The feel of textile will lose if larger than these values */
+  background-position: 0 0, 0.35rem 0.35rem; /* The second pair of values should be half as large as the background-size value so that the grid of circles overlaps just in halfway */
+  height: 2rem;
+  width: 100%;
+  }
+
 /* Side margins */
 
 .item--margined {
