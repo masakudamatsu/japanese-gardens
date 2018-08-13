@@ -59,7 +59,7 @@ figure img {
 }
 
 .heading {
-  color: brown ;
+  color: #b01c21; /* Obtained by brightening the brown color of Altamira cave painging of Bison to a value of 40% */
   font-weight: 700;
   line-height: 1;
 }
