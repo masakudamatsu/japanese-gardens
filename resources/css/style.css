@@ -23,6 +23,7 @@ html {
 /* Base font family */
 body {
   font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
 }
 
 /* Make the image size responsive while not exceeding its original size */
