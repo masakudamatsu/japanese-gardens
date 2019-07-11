@@ -29,6 +29,7 @@
 body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
+  line-height: 1.5; /* See GitHub issue #24 for rationale */
 }
 
 /* Make the image size responsive while not exceeding its original size */
@@ -98,8 +99,10 @@ figure img {
 
 .section__paragraph {
   font-size: 1rem;
-  line-height: 1.5;
+  hyphens: auto;
   padding-top: 0.8rem; /* 1.3rem space between paragraphs: 0.8 + (x-1), where x is line-height */
+  max-width: 32em;
+  /* min-width: 15em; */
 }
 
 .section__paragraph--first { /* Below the section title or the image */
