@@ -171,14 +171,6 @@ figure img {
   max-height: 180px; /* Max-height allows the image to be shorter if the aspect ratio implies so */
 }
 
-.figure__container--unity img {
-  border-bottom: 1px solid white;
-}
-
-.figure__container--unity img:last-child {
-  border-bottom: none;
-}
-
 .author {
   border-top: 1px solid #f2f2f2;
   line-height: 1.5;
