@@ -63,6 +63,10 @@ figure img {
   top: 0;
   width:100%;
 }
+
+.subsubsection__figure {
+  margin: 0.3554rem 0 0 0;
+}
 /* Header and Footer */
 .ichimonji {
   background-color: #BFC0C4; /* fall back for Opera Mini */
