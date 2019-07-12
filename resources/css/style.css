@@ -15,6 +15,18 @@
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
 }
 
+/* Measure & Vertical margin */
+.paragraph {
+  hyphens: auto;
+  max-width: 32em;
+  /* min-width: 15em; */
+  padding-top: 0.8433em; /* GitHub issue #46 for rationale */
+}
+
+/* Horizontal margins */
+.page__element--margined {
+  margin: 0 2.4937rem;
+}
 /* Make the image size responsive while not exceeding its original size */
 figure {
   overflow: hidden;
@@ -38,12 +50,6 @@ figure img {
   width: 100%;
   }
 
-/* Side margins */
-
-.item--margined {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
 
 .item--optically-aligned {
   margin-left: 1.45rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
@@ -78,14 +84,7 @@ figure img {
 
 .section__title {
   font-size: 1.5rem;
-}
-
-.section__paragraph {
-  font-size: 1rem;
-  hyphens: auto;
-  padding-top: 0.8rem; /* 1.3rem space between paragraphs: 0.8 + (x-1), where x is line-height */
-  max-width: 32em;
-  /* min-width: 15em; */
+  text-indent: -0.04em; /* Optical alignment with paragraphs */
 }
 
 .section__paragraph--first { /* Below the section title or the image */
@@ -98,25 +97,25 @@ figure img {
 
 /* Paragraphs (i.e. subsections) */
 
-.paragraph {
+.subsection {
   padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
 }
 
-.paragraph__title {
+.subsection__title {
   font-size: 1.2rem;
 }
 
-.paragraph__lines {
+.subsection__lines {
   font-size: 1rem;
   line-height: 1.5;
   padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
 }
 
-.paragraph__figure {
+.subsection__figure {
   margin-top: 0.5rem; /* padding-top does not work as the height of the image is set to include padding */
 }
 
-.paragraph__figure--after-text {
+.subsection__figure--after-text {
   margin-top: 0.25rem; /* The space between lines */
 }
 
