@@ -15,11 +15,15 @@
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
 }
 
-/* Measure & Vertical margin */
+/* Measure  */
 .paragraph {
   hyphens: auto;
   max-width: 32em;
   /* min-width: 15em; */
+}
+
+/* Vertical margins */
+.section__paragraph {
   padding-top: 0.8433em; /* GitHub issue #46 for rationale */
 }
 
