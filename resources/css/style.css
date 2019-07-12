@@ -43,6 +43,10 @@ figure img {
   font: 700 1rem/1 'Cormorant', serif;
 }
 
+/* Subsubsection */
+.subsubsection__title {
+  font: 700 1rem/1 'Cormorant Garamond', serif;
+}
 .image-blurrer {
   margin-left: -0.2rem;
   position: relative;
