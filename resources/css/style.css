@@ -8,11 +8,11 @@
   }
 }
 
-/* Base font family */
-body {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  line-height: 1.5; /* See GitHub issue #24 for rationale */
+/* Body-text font */
+.page {
+  font: 500 1rem/1.5 'Cormorant Garamond', serif;
+  /* See GitHub issue #24 for the rationale of line-height */
+  /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
 }
 
 /* Make the image size responsive while not exceeding its original size */
