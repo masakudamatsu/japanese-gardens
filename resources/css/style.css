@@ -27,6 +27,9 @@
   padding-top: 0.8433em; /* GitHub issue #46 for rationale */
 }
 
+.subsection__subsubsection {
+  padding-top: 1.1083em;
+}
 /* Horizontal margins */
 .page__element--margined {
   margin: 0 2.4937rem;
