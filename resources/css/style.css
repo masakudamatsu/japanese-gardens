@@ -81,6 +81,10 @@
 /* Subsubsection */
 .subsubsection__title {
   font: 700 1rem/1 'Cormorant Garamond', serif;
+/* Subsection */
+.subsection__title {
+  font-size: 1.25rem;
+  text-indent: -0.03em; /* Optical alignment with paragraphs */
 }
 
 .subsubsection__figure {
@@ -97,11 +101,6 @@
   height: 2rem;
   width: 100%;
   }
-
-
-.item--optically-aligned {
-  margin-left: 1.45rem; /* To align the vertical bar of U, not the left edge of the serif, with the left edge of paragraphs below and above */
-}
 
 /* Titles */
 
@@ -141,10 +140,6 @@
 
 .subsection {
   padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
-}
-
-.subsection__title {
-  font-size: 1.2rem;
 }
 
 .subsection__lines {
