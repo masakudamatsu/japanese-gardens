@@ -34,15 +34,43 @@
 .page__element--margined {
   margin: 0 2.4937rem;
 }
-/* Make the image size responsive while not exceeding its original size */
-figure {
-  overflow: hidden;
-}
 
-figure img {
+/* Figures */
+.figure__container {
+  overflow: hidden; /* Make the image size responsive while not exceeding its original size */
+}
+.figure__image {
   display: block;
   height: auto;
   max-width: 100%;
+}
+.figure__filter-container--spread{
+  position: relative;
+}
+.figure__container--spread:before {
+  /* https://stackoverflow.com/questions/29315635/apply-soft-edges-to-image-using-css */
+  box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+  content:'';
+  display:block;
+  height:100%;
+  left: -0.5rem;
+  position:absolute;
+  top: 0;
+  width: 105%;
+}
+.figure__filter-container--no-spread {
+  margin-left: -0.2rem;
+  position: relative;
+}
+.figure__container--no-spread:before {
+  box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+  content:'';
+  display:block;
+  height:100%;
+  left: 0;
+  position:absolute;
+  top: 0;
+  width: 100%;
 }
 
 .heading {
@@ -53,22 +81,6 @@ figure img {
 /* Subsubsection */
 .subsubsection__title {
   font: 700 1rem/1 'Cormorant Garamond', serif;
-}
-.image-blurrer {
-  margin-left: -0.2rem;
-  position: relative;
-}
-
-.image--blurred:before {
-  /* https://stackoverflow.com/questions/29315635/apply-soft-edges-to-image-using-css */
-  box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
-  content:'';
-  display:block;
-  height:100%;
-  left: 0;
-  position:absolute;
-  top: 0;
-  width:100%;
 }
 
 .subsubsection__figure {
