@@ -78,9 +78,11 @@
   font: 700 1rem/1 'Cormorant', serif;
 }
 
-/* Subsubsection */
-.subsubsection__title {
-  font: 700 1rem/1 'Cormorant Garamond', serif;
+.message {
+  font-style: italic;
+  font-weight: 700;
+}
+
 /* Subsection */
 .subsection__title {
   font-size: 1.25rem;
