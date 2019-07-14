@@ -128,6 +128,14 @@
   font-weight: 700;
 }
 
+.divider {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid hsla(193, 50%, 26%, .90);
+  margin: 2rem 0;
+}
+
 /* Subsection */
 .subsection__title {
   font-size: 1.25rem;
