@@ -124,8 +124,6 @@
   font-size: 2rem;
   font-weight: 700; /* Thickest weight for Cormorant Garamond */
   line-height: 1;
-  margin-bottom: 0; /* To deal with a bug (GitHub Issue #21) */
-  margin-top: 0;    /* To deal with a bug (GitHub Issue #21) */
 }
 
 /* Sections */
