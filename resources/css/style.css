@@ -20,6 +20,14 @@
   padding-top: 1.8673rem; /* For top margin to equal side margin (51.75px), taking into account the top 13px space of 70px font-size of Cormorant SC. i.e.  (51.75px-13px)/20.752px */
 }
 
+.page__paragraph--below-image {
+  padding-top: 1.2669rem;
+}
+
+.page__paragraph--below-paragraph {
+  padding-top: 0.8433em; /* GitHub issue #46 for rationale */
+}
+
 .page__section {
   margin-top: 1.8675rem;
 }
@@ -61,10 +69,6 @@
 /* Vertical margins */
 .section__paragraph--first {
   padding-top: 0.9638em;
-}
-
-.section__paragraph {
-  padding-top: 0.8433em; /* GitHub issue #46 for rationale */
 }
 
 .section__subsection {
