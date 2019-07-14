@@ -142,9 +142,12 @@
   width: 100%;
 }
 
-.heading {
-  color: #b01c21; /* Obtained by brightening the brown color of Altamira cave painging of Bison to a value of 40% */
-  font: 700 1rem/1 'Cormorant', serif;
+/* Make sure the image size is set by its container. */
+.figure__container--floorplan {
+  border: 1px solid hsla(193, 50%, 26%, .20);
+  padding: 0.5rem;
+}
+
 .figure__caption--floorplan {
   font: 700 0.85rem/1.2 'Cormorant SC', serif;
   padding-top: 0.5rem;
@@ -230,12 +233,6 @@
 
 .subsection__figure--after-text {
   margin-top: 0.25rem; /* The space between lines */
-}
-
-/* Make sure the image size is set by its container. */
-.figure__container--floorplan {
-  border: 1px solid #f2f2f2;
-  padding: 0.5rem;
 }
 
 .author {
