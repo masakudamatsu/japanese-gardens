@@ -151,6 +151,10 @@
   text-align: right;
 }
 
+.link {
+  color: #b01c21;
+}
+
 .message {
   font-style: italic;
   font-weight: 700;
