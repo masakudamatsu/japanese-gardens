@@ -55,10 +55,7 @@
 }
 
 .title__text {
-  font-family: 'Cormorant SC', serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1;
+  font: 700 1.5rem/1 'Cormorant SC', serif;
   text-indent: -0.2rem;
 }
 
