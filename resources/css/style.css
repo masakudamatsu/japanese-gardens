@@ -39,6 +39,10 @@
   padding-top: 2.0482rem; /* To make the space equal to the side margin of 51.75px */
 }
 
+.page__figure--below-paragraph {
+  margin-top: 0.6837rem; /* to match the space between lines (23px) */
+}
+
 /* Title block */
 .title__background {
   background-color: hsla(142, 97%, 24%, .90);
@@ -215,10 +219,6 @@
 
 .section__paragraph--first { /* Below the section title or the image */
   padding-top: 1.05rem; /* 1.3rem space between image bottom and text top: 1.05 + (x-1)/2, where x is line height */
-}
-
-.section__figure--first { /* Below the title or another figure */
-  padding-top: 1.3rem;
 }
 
 /* Paragraphs (i.e. subsections) */
