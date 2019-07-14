@@ -22,6 +22,13 @@
   /* min-width: 15em; */
 }
 
+/* Horizontal margins */
+.page__element--padded {
+  padding-left: 2.4937rem;
+  padding-right: 2.4937rem;
+}
+
+/* Vertical margins */
 .page__title {
   padding-bottom: 1.3974rem; /* For bottom margin to equal the vertical margin between paragraph (34.5px) */
   padding-top: 1.8673rem; /* For top margin to equal side margin (51.75px), taking into account the top 13px space of 70px font-size of Cormorant SC. i.e.  (51.75px-13px)/20.752px */
