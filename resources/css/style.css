@@ -121,6 +121,10 @@
 .heading {
   color: #b01c21; /* Obtained by brightening the brown color of Altamira cave painging of Bison to a value of 40% */
   font: 700 1rem/1 'Cormorant', serif;
+.figure__caption--floorplan {
+  font: 700 0.85rem/1.2 'Cormorant SC', serif;
+  padding-top: 0.5rem;
+  text-align: right;
 }
 
 .message {
@@ -199,15 +203,6 @@
 .figure__container--floorplan {
   border: 1px solid #f2f2f2;
   padding: 0.5rem;
-}
-
-.figure__caption--floorplan {
-  font-family: 'Cormorant', serif;
-  font-size: 0.85rem;
-  font-weight: 700; /* Thickest weight for Cormorant Garamond */
-  line-height: 1.2;
-  padding-top: 0.5rem;
-  text-align: right;
 }
 
 .author {
