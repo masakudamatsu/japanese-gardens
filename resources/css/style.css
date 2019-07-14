@@ -36,7 +36,7 @@
 }
 
 .page__section {
-  margin-top: 1.8675rem;
+  padding-top: 2.0482rem; /* To make the space equal to the side margin of 51.75px */
 }
 
 /* Title block */
