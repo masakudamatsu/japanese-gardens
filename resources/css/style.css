@@ -50,6 +50,16 @@
   margin-top: 0.6837rem; /* to match the space between lines (23px) */
 }
 
+
+
+.section__paragraph--first {
+  padding-top: 0.9638em;
+}
+
+.section__subsection {
+  padding-top: 1.1083rem;
+}
+
 /* Title block */
 .title__background {
   background-color: hsla(142, 97%, 24%, .90);
@@ -185,6 +195,7 @@
   font: 700 1rem/1 'Cormorant', serif;
 }
 
+
 .subsection__title {
   font-size: 1.25rem;
   text-indent: -0.03em; /* Optical alignment with paragraphs */
@@ -212,18 +223,7 @@
 
 /* Sections */
 
-.section--after-box {
-  padding-top: 1.5rem;
-}
 
-.section__title {
-  font-size: 1.5rem;
-  text-indent: -0.04em; /* Optical alignment with paragraphs */
-}
-
-.section__paragraph--first { /* Below the section title or the image */
-  padding-top: 1.05rem; /* 1.3rem space between image bottom and text top: 1.05 + (x-1)/2, where x is line height */
-}
 
 /* Paragraphs (i.e. subsections) */
 
@@ -235,10 +235,6 @@
   padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
 }
 
-.subsection__figure--after-text {
-  margin-top: 0.25rem; /* The space between lines */
-}
-
 .author {
   border-top: 1px solid #f2f2f2;
   line-height: 1.5;
@@ -246,6 +242,7 @@
   margin-top: 1.25rem;
   padding-top: 1.25rem;
 }
+
 
 /* Tablets (480px is the widest mobile device, according to https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png) */
 @media only screen and (min-width: 480px) {
