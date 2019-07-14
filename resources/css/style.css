@@ -190,6 +190,10 @@
   font-weight: 700;
 }
 
+.message__container {
+  padding: 2.5rem 0;
+}
+
 .divider {
   border-bottom: none;
   border-left: none;
