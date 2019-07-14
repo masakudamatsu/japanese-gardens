@@ -50,9 +50,16 @@
   margin-top: 0.6837rem; /* to match the space between lines (23px) */
 }
 
+.page__subsection {
+  padding-top: 1.1083rem; /* to match the space between paragraphs (34.5px) */
+}
 
-.section__subsection {
-  padding-top: 1.1083rem;
+.page__figure--below-h3 {
+  margin-top: 0.3554rem;
+}
+
+.page__text--below-image {
+  padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
 }
 
 /* Title block */
@@ -193,11 +200,6 @@
 
 
 
-/* Subsubsection */
-.subsection__figure {
-  margin-top: 0.3554rem;
-}
-
 /* Header and Footer */
 .ichimonji {
   background-color: #BFC0C4; /* fall back for Opera Mini */
@@ -214,10 +216,6 @@
 
 .subsection {
   padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
-}
-
-.subsection__lines {
-  padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
 }
 
 .author {
