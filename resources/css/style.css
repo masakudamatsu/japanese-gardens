@@ -8,19 +8,16 @@
   }
 }
 
-/* Body-text font */
 .page {
+  /* Body-text font */
   font: 500 1rem/1.5 'Cormorant Garamond', serif;
   /* See GitHub issue #24 for the rationale of line-height */
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
-  }
-
-/* Measure  */
-.paragraph {
+  /* Measure */
   hyphens: auto;
-  max-width: 32em;
+  max-width: 34em; /* Dicated by the photo width in the Similar Shapes section */
   /* min-width: 15em; */
-}
+  }
 
 /* Horizontal margins */
 .page__element--padded {
