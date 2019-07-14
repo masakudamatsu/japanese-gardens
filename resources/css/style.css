@@ -30,31 +30,24 @@
   padding-bottom: 1.3974rem; /* For bottom margin to equal the vertical margin between paragraph (34.5px) */
   padding-top: 1.8673rem; /* For top margin to equal side margin (51.75px), taking into account the top 13px space of 70px font-size of Cormorant SC. i.e.  (51.75px-13px)/20.752px */
 }
-
 .page__paragraph--below-image {
   padding-top: 1.2669rem;
 }
-
 .page__paragraph--below-paragraph {
   padding-top: 0.8433em; /* GitHub issue #46 for rationale */
 }
-
 .page__section {
   padding-top: 2.0482rem; /* To make the space equal to the side margin of 51.75px */
 }
-
 .page__figure--below-paragraph {
   margin-top: 0.6837rem; /* to match the space between lines (23px) */
 }
-
 .page__subsection {
   padding-top: 1.1083rem; /* to match the space between paragraphs (34.5px) */
 }
-
 .page__figure--below-h3 {
   margin-top: 0.3554rem;
 }
-
 .page__text--below-image {
   padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
 }
@@ -69,16 +62,13 @@
     hsla(0,0%,100%,0));
   color: #eee;
 }
-
 .title__text {
   font: 700 1.5rem/1 'Cormorant SC', serif;
   text-indent: -0.2rem;
 }
-
 .title__text--big {
   font-size: 3.375rem;
 }
-
 .title__text--small {
   letter-spacing: 0.01rem; /* to edge-align with RYOAN above */
 }
@@ -90,7 +80,6 @@
   padding-bottom: 0.75em;
   text-indent: -0.04em; /* Optical alignment with paragraphs */
 }
-
 .section__title--stone {
   background-color: hsla(193, 50%, 26%, .90);
   background-image: linear-gradient(35deg,
@@ -100,7 +89,6 @@
     hsla(0,0%,100%,0));
   color: #eee;
 }
-
 .section__title--green {
   background-color: hsla(142, 97%, 24%, .90);
   background-image: linear-gradient(165deg,
@@ -110,7 +98,6 @@
     hsla(0,0%,100%,0));
   color: #eee;
 }
-
 .section__title--red {
   background-color: #b01c21; /* Obtained by brightening the brown color of Altamira cave painging of Bison to a value of 40% */
   background-image: linear-gradient(165deg,
@@ -166,17 +153,18 @@
   width: 100%;
 }
 
-/* Make sure the image size is set by its container. */
+/* Floorplan */
 .figure__container--floorplan {
   border: 1px solid hsla(193, 50%, 26%, .20);
   padding: 0.5rem;
 }
-
 .figure__caption--floorplan {
   font: 700 0.85rem/1.2 'Cormorant SC', serif;
   padding-top: 0.5rem;
   text-align: right;
 }
+
+/* Text decorations */
 
 .link {
   color: #b01c21;
@@ -186,7 +174,6 @@
   font-style: italic;
   font-weight: 700;
 }
-
 .message__container {
   padding: 2.5rem 0;
 }
@@ -199,26 +186,7 @@
   margin: 2rem 0;
 }
 
-
-
-/* Header and Footer */
-.ichimonji {
-  background-color: #BFC0C4; /* fall back for Opera Mini */
-  background-image:
-    radial-gradient(circle closest-side, transparent 90%, #f2dba6 91%, transparent),
-    radial-gradient(circle closest-side, #BFC0C4 90%, #f2dba6 91%, #BFC0C4); /* Higher than these percentages will create noticeable dots at the intersection of four circles */
-  background-size: 0.7rem 0.7rem; /* Circles won't be recognizable if smaller than these values. The feel of textile will lose if larger than these values */
-  background-position: 0 0, 0.35rem 0.35rem; /* The second pair of values should be half as large as the background-size value so that the grid of circles overlaps just in halfway */
-  height: 2rem;
-  width: 100%;
-  }
-
-/* Paragraphs (i.e. subsections) */
-
-.subsection {
-  padding-top: 1.05rem; /* to set 1.3rem space between the subsection title and the last text line above. Additional 0.25rem is added below the last text line in the previous section by the line-height 1.5 */
-}
-
+/* Footer */
 .author {
   background-color: hsla(142, 97%, 24%, .90);
   background-image: linear-gradient(30deg,
@@ -232,7 +200,6 @@
   padding-top: 1.25rem;
 }
 
-
 /* Tablets (480px is the widest mobile device, according to https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png) */
 @media only screen and (min-width: 480px) {
 
@@ -241,3 +208,15 @@
 /* Desktops (1024px is the widest tablet in landscape orientation according to https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png) */
 @media only screen and (min-width: 1024px) {
 }
+
+/* Header and Footer */
+.ichimonji {
+  background-color: #BFC0C4; /* fall back for Opera Mini */
+  background-image:
+    radial-gradient(circle closest-side, transparent 90%, #f2dba6 91%, transparent),
+    radial-gradient(circle closest-side, #BFC0C4 90%, #f2dba6 91%, #BFC0C4); /* Higher than these percentages will create noticeable dots at the intersection of four circles */
+  background-size: 0.7rem 0.7rem; /* Circles won't be recognizable if smaller than these values. The feel of textile will lose if larger than these values */
+  background-position: 0 0, 0.35rem 0.35rem; /* The second pair of values should be half as large as the background-size value so that the grid of circles overlaps just in halfway */
+  height: 2rem;
+  width: 100%;
+  }
