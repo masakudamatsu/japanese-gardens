@@ -15,8 +15,40 @@
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
 }
 
+.page__title {
+  padding-bottom: 1.3974rem; /* For bottom margin to equal the vertical margin between paragraph (34.5px) */
+  padding-top: 1.8673rem; /* For top margin to equal side margin (51.75px), taking into account the top 13px space of 70px font-size of Cormorant SC. i.e.  (51.75px-13px)/20.752px */
+}
+
 .page__section {
   margin-top: 1.8675rem;
+}
+
+/* Title block */
+.title__background {
+  background-color: hsla(142, 97%, 24%, .90);
+  background-image: linear-gradient(30deg,
+    hsla(0,0%,100%,0) 0,
+    hsla(0,0%,100%,.5) 55%,
+    hsla(0,0%,100%,.5) 65%,
+    hsla(0,0%,100%,0));
+  color: #eee;
+}
+
+.title__text {
+  font-family: 'Cormorant SC', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  text-indent: -0.2rem;
+}
+
+.title__text--big {
+  font-size: 3.375rem;
+}
+
+.title__text--small {
+  letter-spacing: 0.01rem; /* to edge-align with RYOAN above */
 }
 
 /* Measure  */
@@ -117,14 +149,6 @@
   width: 100%;
   }
 
-/* Titles */
-
-.page-title {
-  font-family: 'Cormorant', serif;
-  font-size: 2rem;
-  font-weight: 700; /* Thickest weight for Cormorant Garamond */
-  line-height: 1;
-}
 
 /* Sections */
 
