@@ -72,6 +72,21 @@
 .title__text--small {
   letter-spacing: 0.01rem; /* to edge-align with RYOAN above */
 }
+@media only screen and (max-width: 355px) {
+  .title__text {
+    font-size: 1.25rem;
+  }
+  .title__text--big {
+    font-size: 2.8125rem;
+  }
+  .title__text--small {
+    letter-spacing: 0.0083rem; /* to edge-align with RYOAN above */
+  }
+  .page__title {
+    padding-bottom: 1.469rem; /* For bottom margin to equal the vertical margin between paragraph (34.5px) */
+    padding-top: 1.9516rem; /* For top margin to equal side margin (51.75px) */
+  }
+}
 
 /* Section title block */
 .section__title {
