@@ -199,12 +199,17 @@
 }
 
 .divider {
-    border: none;
-  margin: 2rem 0;
+  border: none;
+  margin: 0.8915rem 0 0.2168rem 0;
+  /* margin-top makes the space from the previous paragraph's baseline to the top of asterisks equal to 34.5px. maring-bottom makes the space from the bottom of asterisks to the top of X-HEIGHT equal to 34.5px. */
+}
+.divider--above-capital {
+  margin-bottom: 0.4577rem;
+  /* Makes the space to the top of a CAPITAL letter equal to 34.5px. */
 }
 .divider::before {
     color: hsla(193, 50%, 26%, .90);
-    content: '***';
+    content: '* * *';
     display: block;
     text-align: center;
 }
