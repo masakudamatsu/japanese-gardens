@@ -2,6 +2,11 @@
 :root {
   font-size: 1.297rem;
 }
+@media only screen and (max-width: 22.1875rem) { /* = 355px / 16px */
+  :root {
+    font-size: 1.2rem;
+  }
+}
 @media only screen and (min-width: 1024px) {
   :root {
     font-size: 1.513rem;
