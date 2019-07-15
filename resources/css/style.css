@@ -72,7 +72,7 @@
 .title__text--small {
   letter-spacing: 0.01rem; /* to edge-align with RYOAN above */
 }
-@media only screen and (max-width: 355px) {
+@media only screen and (max-width: 22.1875rem) { /* = 355px / 16px */
   .title__text {
     font-size: 1.25rem;
   }
