@@ -170,12 +170,17 @@
   color: #b01c21;
 }
 
+.message__container {
+  padding: 2.5rem 0;
+  text-align: center;
+}
 .message {
   font-style: italic;
   font-weight: 700;
 }
-.message__container {
-  padding: 2.5rem 0;
+.message__line2,
+.message__line3 {
+  white-space: nowrap;
 }
 
 .divider {
