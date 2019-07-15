@@ -90,7 +90,7 @@
 
 /* Section title block */
 .section__title {
-  font: 700 1.5rem/1 'Cormorant', serif;
+  font: 700 1.5rem/1.26 'Cormorant', serif;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   text-indent: -0.04em; /* Optical alignment with paragraphs */
@@ -121,6 +121,9 @@
     hsla(0,0%,100%,.5) 65%,
     hsla(0,0%,100%,0));
   color: #eee;
+}
+.title__line2 {
+  white-space: nowrap; /* To prevent a line break for narrow screens */
 }
 
 /* Subsection Title Block */
