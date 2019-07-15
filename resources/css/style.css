@@ -179,11 +179,14 @@
 }
 
 .divider {
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  border-top: 1px solid hsla(193, 50%, 26%, .90);
+    border: none;
   margin: 2rem 0;
+}
+.divider::before {
+    color: hsla(193, 50%, 26%, .90);
+    content: '***';
+    display: block;
+    text-align: center;
 }
 
 /* Footer */
