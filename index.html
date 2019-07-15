@@ -92,7 +92,9 @@
                     page__element--padded">
             The key to understand this cryptic garden is to see it from where you're supposed to: halfway between the left and right edges of this rectangular garden, indicated with the gray arrow in the floor plan below:
           </p>
-          <div class="page__figure--below-paragraph
+          <!-- We need the following div wrapper to draw side borders inside the horizontal margins defined in the page__element--padded class. -->
+          <div class="figure__filter-container--floorplan
+                      page__figure--below-paragraph
                       page__element--padded">
             <figure class="figure__container
                            figure__container--floorplan">
@@ -100,9 +102,8 @@
                    src="resources/images/ryoanji-jardin-seco-plano-mapa.jpeg"
                    alt="">
               <figcaption class="figure__caption--floorplan">
-                The floor plan of Ryoan-ji Rock Garden
-                <br>
-                <a class="link" href="https://www.taringa.net/posts/turismo/15246625/Ryoanji-el-jardin-de-rocas-y-grava-en-Japon.html" target="_blank">[image source]</a>
+                The floor plan of Ryoan-ji <span class="title__line2">Rock Garden</span>
+                <span class="title__line2"><a class="link" href="https://www.taringa.net/posts/turismo/15246625/Ryoanji-el-jardin-de-rocas-y-grava-en-Japon.html" target="_blank">[image source]</a></span>
               </figcaption>
             </figure>
           </div>

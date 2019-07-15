@@ -145,6 +145,7 @@
 .figure__image {
   display: block;
   height: auto;
+  margin: 0 auto; /* Center-align the image when the screen width exceeds its width */
   max-width: 100%;
 }
 .figure__filter-container--spread{
@@ -177,14 +178,26 @@
 }
 
 /* Floorplan */
+/* Media querry deals with narrower screens, not wider screens, because otherwise it is difficult to draw side borders and add side margins outside the border for wider screens */
 .figure__container--floorplan {
   border: 1px solid hsla(193, 50%, 26%, .20);
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 .figure__caption--floorplan {
   font: 700 0.85rem/1.2 'Cormorant SC', serif;
+  margin-right: 5px; /* Align with the right-edge of the floor plan */
   padding-top: 0.5rem;
   text-align: right;
+}
+@media only screen and (max-width: 497px) { /* Image width is 497px */
+  .figure__filter-container--floorplan {
+    padding-left: 0; /* Override the horizontal margins set above */
+    padding-right: 0; /* Override the horizontal margins set above */
+  }
+  .figure__container--floorplan {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 /* Text decorations */
