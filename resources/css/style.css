@@ -186,7 +186,8 @@
 }
 
 .message__container {
-  padding: 2.5rem 0;
+  margin: 2.4576rem 0;
+  /* Double the space between paragraphs */
   text-align: center;
 }
 .message {
