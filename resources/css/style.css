@@ -7,11 +7,6 @@
     font-size: 1.2rem;
   }
 }
-@media only screen and (min-width: 1024px) {
-  :root {
-    font-size: 1.513rem;
-  }
-}
 
 .page {
   /* Body-text font */
@@ -250,13 +245,32 @@
   padding-top: 1.25rem;
 }
 
-/* Tablets (480px is the widest mobile device, according to https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png) */
-@media only screen and (min-width: 480px) {
+/* Tablets */
+@media only screen and (min-width: 44.098rem) { /* Maximum measure 34rem * base font size 1.297rem */
+  :root {
+    font-size: 1.513rem;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 51.442rem) {  /* Maximum measure 34rem * base font size 1.513rem */
+  :root {
+    font-size: 1.729rem;
+    /* 1.513 x (24px/21px) */
+  }
+  .page {
+    background-color: #f9f9f9;
+    max-width: 100%;
+  }
+  .page__section {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 34rem;
+  }
 
 }
 
-/* Desktops (1024px is the widest tablet in landscape orientation according to https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png) */
-@media only screen and (min-width: 1024px) {
+
+
 }
 
 /* Header and Footer */
