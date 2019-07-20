@@ -63,11 +63,14 @@
   color: #eee;
 }
 .title__text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
   font: 700 1.5rem/1 'Cormorant SC', serif;
-  text-indent: -0.2rem;
 }
 .title__text--big {
   font-size: 3.375rem;
+  text-indent: -0.2rem; /* to left-align with the line below */
 }
 .title__text--small {
   letter-spacing: 0.01rem; /* to edge-align with RYOAN above */
@@ -253,11 +256,16 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    color: #111;
+    color: #101000;
     z-index: 5;
   }
-  .title__linebreak {
-    display: none;
+  .title__text { /* To remove the line break */
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .title__text--small {
+    padding-left: 0.3em; /* To insert a word space */
   }
   .figure__container--small {
     max-width: 705px; /* the middle-right rock cluster photo cannot be wider than this size */
