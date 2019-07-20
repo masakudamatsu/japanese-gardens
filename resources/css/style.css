@@ -249,6 +249,16 @@
   :root {
     font-size: 1.513rem;
   }
+  .title__background {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    color: #111;
+    z-index: 5;
+  }
+  .title__linebreak {
+    display: none;
+  }
   .figure__container--small {
     max-width: 705px; /* the middle-right rock cluster photo cannot be wider than this size */
   }
