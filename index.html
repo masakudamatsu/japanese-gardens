@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang='en'> <!-- Change if non-English language is used. -->
+<html lang='en'>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" href="FAVICON.ico" type="image/x-icon"> -->
     <title>
-	    Ryoan-ji Rock Garden
+	    Ryoan-ji Rock Garden | 龍安寺石庭
     </title>
+    <meta name="description" content="
+      Ryoan-ji Rock Garden teaches us the principle of Zen Buddhism to live happily, with the layout of 15 rocks as a textbook.
+    ">
 
-    <!-- Show characters from non-Western languages -->
-    <meta charset='UTF-8'/>
-
-    <!-- Avoid mobile devices to zoom out to display the entire desktop layout -->
-    <meta name='viewport'
-      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400|Cormorant:700" rel="stylesheet">
-
-    <!-- Make the default CSS style consistent across browsers -->
-    <link href="./resources/css/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC:700&display=swap" rel="stylesheet">
+    <!--  TODO: Replace normalize.css with ress.css -->
+    <link href="./resources/css/ress.css" type="text/css" rel="stylesheet"/>
 
     <!-- Slick (http://kenwheeler.github.io/slick/) -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -26,244 +26,538 @@
 
   </head>
 
-  <body>
-    <header class="ichimonji">
-    </header>
+  <body class="page">
     <main role="main">
       <article class="">
-        <header class="section--after-box parallax">
-          <h1 class="page-title item--margined">Ryoan-ji Rock Garden</h1>
-          <figure class="carousel section__figure--first">
-            <img src="resources/images/ryoanji-banner-spring.jpg" alt="Ryoan-ji Zen Garden in spring">
-            <img src="resources/images/ryoanji-banner-summer.jpg" alt="Ryoan-ji Zen Garden in summer">
-            <img src="resources/images/ryoanji-banner-autumn.jpg" alt="Ryoan-ji Zen Garden in autumn">
-            <img src="resources/images/ryoanji-banner-winter.jpg" alt="Ryoan-ji Zen Garden in winter">
+        <header class="top">
+          <div class="title__background
+                      page__title">
+            <h1 class="title__text
+                       page__element--padded">
+              <span class="title__text--big">
+                Ryoan-ji
+              </span>
+              <span class="title__text--small">
+                Rock Garden
+              </span>
+            </h1>
+          </div>
+          <figure class="figure__container
+                         title__image
+                         carousel">
+            <img class="figure__image"
+                 src="resources/images/ryoanji-banner-spring-small.jpg"
+                 srcset="resources/images/ryoanji-banner-spring-large.jpg 1882w"
+                 srcset="resources/images/ryoanji-banner-spring-small.jpg 941w"
+                 sizes="(min-width: 941px) 941px, 100vw"
+                 alt="Ryoan-ji Zen Garden in spring">
+            <img class="figure__image"
+                 src="resources/images/ryoanji-banner-summer-small.jpg"
+                 srcset="resources/images/ryoanji-banner-summer-large.jpg 1882w"
+                 srcset="resources/images/ryoanji-banner-summer-small.jpg 941w"
+                 sizes="(min-width: 941px) 941px, 100vw"
+                 alt="Ryoan-ji Zen Garden in summer">
+            <img class="figure__image"
+                 src="resources/images/ryoanji-banner-autumn-small.jpg"
+                 srcset="resources/images/ryoanji-banner-autumn-large.jpg 1882w"
+                 srcset="resources/images/ryoanji-banner-autumn-small.jpg 941w"
+                 sizes="(min-width: 941px) 941px, 100vw"
+                 alt="Ryoan-ji Zen Garden in autumn">
+            <img class="figure__image"
+                 src="resources/images/ryoanji-banner-winter-small.jpg"
+                 srcset="resources/images/ryoanji-banner-winter-large.jpg 1882w"
+                 srcset="resources/images/ryoanji-banner-winter-small.jpg 941w"
+                 sizes="(min-width: 941px) 941px, 100vw"
+                 alt="Ryoan-ji Zen Garden in winter">
           </figure>
-          <p id="first-paragraph" class="section__paragraph section__paragraph--first item--margined">
+          <p class="page__paragraph--below-image
+                    page__paragraph--above-paragraph
+                    page__element--padded">
             Pick any travel guide for Kyoto. I'm sure you’ll find Ryoan-ji, a Zen Buddhist temple famous for its Rock Garden (pictured above).
           </p>
-          <p class="section__paragraph item--margined">
+          <p class="page__paragraph--above-paragraph
+                    page__element--padded">
             This zen garden is made of fifteen rocks, surrounded by patches of moss, laid out in the ocean of gravels on a walled rectangular plot.
           </p>
-          <p class="section__paragraph item--margined">
-            And that's it...
+          <p class="page__paragraph--above-paragraph
+                    page__element--padded">
+            And that's it…
           </p>
-          <p class="section__paragraph item--margined">
+          <p class="page__paragraph--above-paragraph
+                    page__element--padded">
             If you have been to this garden, you must have been utterly puzzled during your visit. Too abstract and too minimal. I also scratched my head during my first visit to the garden. My second visit a year later didn’t help me figure out anything, either.
           </p>
-          <p class="section__paragraph item--margined">
-            During the third visit, however, the whole garden started to make sense to me. It taught me how to live a happy life, with the layout of the fifteen rocks as the &ldquo;textbook&rdquo;.
+          <p class="page__paragraph--above-section
+                    page__element--padded">
+            During the third visit, however, the whole garden started to make sense to me. It taught me how to live a happy life, with the layout of the fifteen rocks as the “textbook”.
           </p>
         </header>
-        <section class="section--after-paragraph">
-          <h2 class="heading section__title  item--margined">
-            Viewpoint
+        <section class="page__section">
+          <h2 class="section__title
+                     page__element--padded
+                     section__title--stone">
+            Get the Viewpoint Right
           </h2>
-          <p class="section__paragraph section__paragraph--first  item--margined">
+          <p class="paragraph
+                    page__paragraph--below-image
+                    page__text--above-image
+                    page__element--padded">
             The key to understand this cryptic garden is to see it from where you're supposed to: halfway between the left and right edges of this rectangular garden, indicated with the gray arrow in the floor plan below:
-            </p>
-          <figure class="figure__container--floorplan paragraph__figure--after-text item--margined">
-            <img src="resources/images/ryoanji-jardin-seco-plano-mapa.jpeg" alt="">
-            <figcaption class="figure__caption--floorplan">
-              The floor plan of Ryoan-ji Rock Garden
-              <br>
-              <a href="https://www.taringa.net/posts/turismo/15246625/Ryoanji-el-jardin-de-rocas-y-grava-en-Japon.html" target="_blank">[image source]</a>
-            </figcaption>
-          </figure>
-          <p class="section__paragraph section__paragraph--first  item--margined">
-            My third visit to the garden was different from the previous ones in that I had this piece of knowledge, learned from <a href="https://www.amazon.co.jp/dp/4093435065/" target="_blank">a book on Japanese gardens</a>. The book says that the whole garden was constructed to be seen from this viewpoint.
           </p>
-          <p class="section__paragraph  item--margined">
-            Once I sit down and see the garden from this viewpoint, the layout of fifteen rocks starts taking on its meaning.
-          </p>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">Look straight ahead</h3>
-            <figure class="paragraph__figure">
-              <img src="resources/images/ryoanji-look-straight.jpg" alt="Central view of Ryoan-ji Zen Garden">
+          <!-- We need the following div wrapper to draw side borders inside the horizontal margins defined in the page__element--padded class. -->
+          <div class="figure__filter-container--floorplan
+                      page__element--padded">
+            <figure class="figure__container
+                           figure__container--floorplan">
+              <img class="figure__image"
+                   src="resources/images/ryoanji-jardin-seco-plano-mapa.jpeg"
+                   alt="">
+              <figcaption class="figure__caption--floorplan">
+                The floor plan of Ryoan-ji <span class="title__line2">Rock Garden</span>
+                <span class="title__line2"><a class="link" href="https://www.taringa.net/posts/turismo/15246625/Ryoanji-el-jardin-de-rocas-y-grava-en-Japon.html" target="_blank">[image source]</a></span>
+              </figcaption>
             </figure>
-            <p class="paragraph__lines  item--margined">
-              When I look straight ahead, there is no stone at the center of gaze. The landscape composition is split between two groups of rocks on the right and on the left. Nothing is really emphasized.
+          </div>
+          <p class="paragraph
+                    page__paragraph--below-image
+                    page__paragraph--above-section
+                    page__element--padded">
+            My third visit to the garden was different from the previous ones in that I had this piece of knowledge, learned from <a class="link" href="https://www.amazon.co.jp/dp/4093435065/" target="_blank">a book on Japanese gardens</a>. The book says that the whole garden was constructed to be seen from this viewpoint.
+          </p>
+        </section>
+        <section class="page__section">
+          <h2 class="section__title
+                     page__element--padded
+                     section__title--green">
+            No Focal Point in the Garden
+          </h2>
+          <p class="page__paragraph--below-image
+                    page__paragraph--above-subsection
+                    page__element--padded">
+            Once I sit down and see the garden from the correct viewpoint, the layout of fifteen rocks starts taking on its meaning: <em class="message">there is nothing emphasized in this garden</em>.
+          </p>
+          <section class="page__subsection">
+            <h3 class="subsection__title
+                       page__h3--above-image
+                       page__element--padded">
+              Look straight ahead
+            </h3>
+            <div class="figure__filter-container--spread">
+              <figure class="figure__container
+                             figure__container--spread">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-banner-summer-small.jpg"
+                     srcset="resources/images/ryoanji-banner-summer-large.jpg 1882w"
+                     srcset="resources/images/ryoanji-banner-summer-small.jpg 941w"
+                     sizes="(min-width: 941px) 941px, 100vw"
+                     alt="Central view of Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <p class="page__text--below-image
+                      page__paragraph--above-subsection
+                      page__element--padded">
+              There is no stone at the center of gaze when I look straight ahead. The landscape composition is split between two groups of rocks on the right and on the left. Nothing is really emphasized.
             </p>
           </section>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">Look to the left</h3>
-            <figure class="paragraph__figure ">
-              <img src="resources/images/ryoanji-look-left.jpg" alt="Leftward view of Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">
+          <section class="page__subsection">
+            <h3 class="subsection__title
+                       page__h3--above-image
+                       page__element--padded">
+              Look to the left
+            </h3>
+            <div class="figure__filter-container--spread">
+              <figure class="figure__container
+                             figure__container--spread">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-look-left-small.jpg"
+                     srcset="resources/images/ryoanji-look-left-large.jpg 1882w"
+                     srcset="resources/images/ryoanji-look-left-small.jpg 941w"
+                     sizes="(min-width: 941px) 941px, 100vw"
+                     alt="Leftward view of Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <p class="page__text--below-image
+                      page__paragraph--above-subsection
+                      page__element--padded">
               Next, I turn my head to the left while sitting in the same viewpoint. There is again nothing in the center of my vision. The view is split. Nothing is emphasised.
             </p>
           </section>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">Look to the right</h3>
-            <figure class="paragraph__figure ">
-              <img src="resources/images/ryoanji-look-right.jpg" alt="Rightward view of Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">
+          <section class="page__subsection">
+            <h3 class="subsection__title
+                       page__h3--above-image
+                       page__element--padded">
+              Look to the right
+            </h3>
+            <div class="figure__filter-container--spread">
+              <figure class="figure__container
+                             figure__container--spread">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-look-right-small.jpg"
+                     srcset="resources/images/ryoanji-look-right-large.jpg 1882w"
+                     srcset="resources/images/ryoanji-look-right-small.jpg 941w"
+                     sizes="(min-width: 941px) 941px, 100vw"
+                     alt="Rightward view of Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <p class="page__text--below-image
+                      page__element--padded
+                      page__paragraph--above-section">
               Finally, I turn my head to the right while still staying at the same viewpoint. There are three groups of rocks, but none of them stand out clearly. Location in the middle usually casts the spotlight, but the two rocks in the middle group look rather modest and are located off the center. Nothing is stressed in this view, either.
             </p>
           </section>
-          <p class="section__paragraph item--margined">
-          So there is nothing emphasized in this garden.
-          </p>
         </section>
-        <section class="section--after-paragraph">
-          <h2 class="heading section__title item--optically-aligned  item--margined">
-            Five clusters of rocks
+        <section class="page__section">
+          <h2 class="section__title
+                     page__element--padded
+                     section__title--green">
+            No Single Rock Dominates
           </h2>
-          <p class="section__paragraph section__paragraph--first item--margined">
+          <p class="page__paragraph--below-image
+                    page__paragraph--above-subsection
+                    page__element--padded">
             The lack of emphasis, I then notice, penetrates into how fifteen rocks are arranged into five clusters, each surrounded by a patch of moss. Let’s start looking at the middle three clusters.
           </p>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">The middle-left</h3>
-            <figure class="paragraph__figure figure__container--five-sets">
-              <img src="resources/images/ryoanji-middle-left.jpg" alt="The front view of the middle-left group of two rocks in Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">
+          <section class="page__subsection
+                          page__element--padded
+                          middle-left">
+            <div class="middle-left__non-text">
+              <h3 class="subsection__title
+                       page__h3--above-image">
+                The middle-left
+              </h3>
+              <div class="figure__filter-container--no-spread">
+                <figure class="figure__container
+                               figure__container--no-spread
+                               figure__container--small">
+                  <img class="figure__image"
+                      src="resources/images/ryoanji-middle-left.jpg"
+                      alt="The front view of the middle-left group of two rocks in Ryoan-ji Zen Garden">
+                </figure>
+              </div>
+            </div>
+            <p class="page__text--below-image
+                   page__paragraph--above-subsection
+                   middle-left__text">
               The middle-left cluster consists of two rocks. There is no center. The right elongated one dominates, but it is located to the right side, not at the center.
             </p>
           </section>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">The middle</h3>
-            <figure class="paragraph__figure figure__container--five-sets">
-              <img src="resources/images/ryoanji-middle-right.jpg" alt="The front view of the middle-right group of three rocks in Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">
+          <section class="page__subsection
+                          page__element--padded
+                          middle">
+            <div class="middle__non-text">
+              <h3 class="subsection__title
+                       middle__title
+                       page__h3--above-image">
+                The middle
+              </h3>
+              <div class="figure__filter-container--no-spread">
+                <figure class="figure__container
+                               figure__container--no-spread
+                               figure__container--small">
+                  <img class="figure__image"
+                       src="resources/images/ryoanji-middle-right.jpg"
+                       alt="The front view of the middle-right group of three rocks in Ryoan-ji Zen Garden">
+                </figure>
+              </div>
+            </div>
+            <p class="page__text--below-image
+                   page__paragraph--above-subsection
+                   middle__text">
               The middle cluster consists of three rocks. One on the left dominates, but it is again not located at the center but to the side.
             </p>
+            <div class="middle__right-margin">
+            </div>
           </section>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">The middle-right</h3>
-            <figure class="paragraph__figure figure__container--five-sets">
-              <img src="resources/images/ryoanji-second-right.jpg" alt="The front view of the second-from-right group of two rocks in Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">
+          <section class="page__subsection
+                          page__element--padded
+                          middle-right">
+            <div class="middle-right__non-text">
+              <h3 class="subsection__title
+                       middle-right__title
+                       page__h3--above-image">
+                The middle-right
+              </h3>
+              <div class="figure__filter-container--no-spread">
+                <figure class="figure__container
+                               figure__container--no-spread
+                               figure__container--small">
+                  <img class="figure__image"
+                       src="resources/images/ryoanji-second-right.jpg"
+                       alt="The front view of the second-from-right group of two rocks in Ryoan-ji Zen Garden">
+                </figure>
+              </div>
+            </div>
+            <p class="page__text--below-image
+                   page__paragraph--above-subsection
+                   middle-right__text">
               The middle-right cluster consists of two rocks, each in a peculiar shape. But neither is emphasized more than the other.
             </p>
           </section>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">The leftmost</h3>
-            <figure class="paragraph__figure figure__container--five-sets">
-              <img src="resources/images/ryoanji-leftmost.jpg" alt="The front view of the leftmost group of five rocks in Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">
+          <section class="page__subsection
+                          page__element--padded
+                          leftmost">
+            <div class="leftmost__non-text">
+              <h3 class="subsection__title
+                       page__h3--above-image">
+                The leftmost
+              </h3>
+              <div class="figure__filter-container--no-spread">
+                <figure class="figure__container
+                               figure__container--no-spread
+                               figure__container--small">
+                  <img class="figure__image"
+                       src="resources/images/ryoanji-leftmost.jpg"
+                       alt="The front view of the leftmost group of five rocks in Ryoan-ji Zen Garden">
+                </figure>
+              </div>
+            </div>
+            <p class="page__text--below-image
+                   page__paragraph--above-subsection
+                   leftmost__text">
               The group of rocks furthest to the the left is the most magnificent composition in this garden if seen from the front of it. One large, well-shaped rock stands in the middle, flanked by two small standing rocks and two flat stones farther away. But the whole group is marginalized at the left edge of the garden, not at the center. When seen from the viewpoint, the symmetric composition is thus destroyed.
             </p>
+            <div class="leftmost__right-margin">
+            </div>
           </section>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">The rightmost</h3>
-            <figure class="paragraph__figure figure__container--five-sets">
-              <img src="resources/images/ryoanji-rightmost.jpg" alt="The front view of the rightmost group of three rocks in Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">The group of rocks furthest to the right is made of three rocks. One large lying stone is flanked by two flat stones. This symmetric composition, however, is also marginalized at the edge of the garden, not in the center. The right flat stone even disappears from sight when seen from the viewpoint, as it hides behind the large rock.</p>
+          <section class="page__subsection
+                          page__element--padded
+                          rightmost">
+            <div class="rightmost__non-text">
+              <h3 class="subsection__title
+                         page__h3--above-image
+                         rightmost__title">
+                The rightmost
+              </h3>
+              <div class="figure__filter-container--no-spread">
+                <figure class="figure__container
+                               figure__container--no-spread
+                               figure__container--small">
+                  <img class="figure__image"
+                       src="resources/images/ryoanji-rightmost.jpg"
+                       alt="The front view of the rightmost group of three rocks in Ryoan-ji Zen Garden">
+                </figure>
+              </div>
+            </div>
+            <p class="page__text--below-image
+                   page__paragraph--above-section
+                   rightmost__text">
+              The group of rocks furthest to the right is made of three rocks. One large lying stone is flanked by two flat stones. This symmetric composition, however, is also marginalized at the edge of the garden, not in the center. The right flat stone even disappears from sight when seen from the viewpoint, as it hides behind the large rock.
+            </p>
+            <div class="rightmost__left-margin">
+            </div>
           </section>
         </section>
-        <section class="section--after-paragraph">
-          <h2 class="heading section__title item--optically-aligned item--margined">
-            Emphasis on Nothing
+        <section class="page__section">
+          <h2 class="section__title
+                     page__element--padded
+                     section__title--stone">
+            The Rock Garden's Message
           </h2>
-          <p class="section__paragraph section__paragraph--first
-          item--margined">
-            Now it is clear that nothing is emphasized throughout this garden. I start wondering why. The designer of this garden, who remains anonymous despite many attempts of historians to identify, must have had a purpose. What message did he or she try to convey to the visitors of this garden?
-          </p>
-          <p class="section__paragraph item--margined">
-            I remember that each rock in a zen garden is often interpreted as an unfulfilled desire in our mind. Once I see the rocks in Ryoan-ji Rock Garden as my own unfulfilled desires, the walled rectangular garden space begins to look like a metaphor of my inner self.
-          </p>
-          <p class="section__paragraph item--margined">
-            No emphasis on any of the fifteen rocks, I conclude, can therefore be interpreted as the following message:
-          </p>
-          <p class="section__paragraph item--margined">
-            <em>Don’t fixate on one particular thing in our mind.</em>
-          </p>
-          <p class="section__paragraph item--margined">
-            This idea is central to the preaching of Zen Buddhism to live a happy life. Don’t keep regretting what you’ve done in the past. Don’t always be worried about your uncertain future. Nothing should be at the center of your mind, just like the arrangement of these fifteen rocks within the walled rectangular plot.
-          </p>
+          <div class="page__element--padded">
+            <p class="page__paragraph--below-image
+                     page__paragraph--above-paragraph">
+              Now it is clear that nothing is emphasized throughout this garden. I start wondering why. The designer of this garden, who remains anonymous despite many attempts of historians to identify, must have had a purpose. What message did he or she try to convey to the visitors of this garden?
+            </p>
+            <p class="page__paragraph--above-paragraph">
+              I remember that each rock in a zen garden is often interpreted as an unfulfilled desire in our mind. Once I see the rocks in Ryoan-ji Rock Garden as my own unfulfilled desires, the walled rectangular garden space begins to look like a metaphor of my inner self.
+            </p>
+            <p class="">
+              No emphasis on any of the fifteen rocks, I conclude, can therefore be interpreted as the following message:
+            </p>
+            <p class="message__container">
+              <em class="message">Don’t fixate on <span class="message__line2">one particular thing</span> <span class="message__line3">in our mind.</span></em>
+            </p>
+            <p class="">
+              This idea is central to the preaching of Zen Buddhism to live a happy life. Don’t keep regretting what you’ve done in the past. Don’t always be worried about your uncertain future. Nothing should be at the center of your mind, just like the arrangement of these fifteen rocks within the walled rectangular plot.
+            </p>
+            <hr class="divider
+                       divider--above-capital">
+            <p class="page__paragraph--above-section">
+              That’s not easy, however. The lack of focus makes us feel uneasy. We want to fulfil our desires. There needs to be an element of calmness to accept the preaching of no emphasis.
+            </p>
+          </div>
         </section>
-        <section class="section--after-paragraph">
-          <h2 class="heading section__title  item--margined">
-            Similarities across rocks
+        <section class="page__section">
+          <h2 class="section__title
+                     page__element--padded
+                     section__title--green">
+            Similar Shapes <span class="title__line2">Unite Rocks</span>
           </h2>
-          <p class="section__paragraph section__paragraph--first item--margined">
-            That’s not easy, however. The lack of focus makes us feel uneasy. We want to fulfil our desires. There needs to be an element of calmness to accept the preaching of <em>no emphasis</em>.
+          <p class="page__paragraph--below-image
+                    page__paragraph--above-subsection
+                    page__element--padded">
+            Ryoan-ji Rock Garden is kind enough to understand this human psyche. It visually calms us down by uniting the five groups of rocks with the similarity of rock shapes.
           </p>
-          <p class="section__paragraph  item--margined">
-            Ryoan-ji Rock Garden understands this human psyche. It visually calms us down by uniting the five groups of rocks with the similarity of rock shapes.
-          </p>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">
+          <section class="page__subsection">
+            <h3 class="subsection__title
+                       page__h3--above-image
+                       page__element--padded">
               Pairs of flat stones
             </h3>
-            <figure class="paragraph__figure figure__container--unity">
-              <img src="resources/images/ryoanji-leftmost.jpg" alt="The front view of the leftmost group of five rocks in Ryoan-ji Zen Garden">
-              <img src="resources/images/ryoanji-rightmost.jpg" alt="The front view of the rightmost group of three rocks in Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">
+            <div class="figure__filter-container--spread
+                        leftmost--compare">
+              <figure class="figure__container
+                           figure__container--unity
+                           figure__container--small
+                           leftmost__non-text">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-leftmost.jpg"
+                     alt="The front view of the leftmost group of five rocks in Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <div class="figure__filter-container--spread
+                        rightmost--compare">
+              <figure class="figure__container
+                             figure__container--unity
+                             figure__container--small
+                             rightmost__non-text">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-rightmost.jpg"
+                     alt="The front view of the rightmost group of three rocks in Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <p class="page__text--below-image
+                      page__paragraph--above-subsection
+                      page__element--padded">
               The leftmost group of rocks is connected to the rightmost with the pairs of flat flanking stones.
             </p>
           </section>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">Squarish standing stones</h3>
-            <figure class="paragraph__figure figure__container--unity">
-              <img src="resources/images/ryoanji-leftmost.jpg" alt="The front view of the leftmost group of five rocks in Ryoan-ji Zen Garden">
-              <img src="resources/images/ryoanji-middle-right.jpg" alt="The front view of the middle-right group of three rocks in Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">The leftmost group of rocks is also connected to the middle one by the squarish standing stones.</p>
+          <section class="page__subsection">
+            <h3 class="subsection__title
+                       page__h3--above-image
+                       page__element--padded">
+              Squarish standing stones
+            </h3>
+            <div class="figure__filter-container--spread
+                        leftmost--compare">
+              <figure class="figure__container
+                             figure__container--unity
+                             figure__container--small
+                             leftmost__non-text">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-leftmost.jpg"
+                     alt="The front view of the leftmost group of five rocks in Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <div class="figure__filter-container--spread
+                        middle--compare">
+              <figure class="figure__container
+                             figure__container--unity
+                             figure__container--small
+                             middle__non-text">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-middle-right.jpg"
+                     alt="The front view of the middle-right group of three rocks in Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <p class="page__text--below-image
+                      page__paragraph--above-subsection
+                      page__element--padded">
+              The leftmost group of rocks is also connected to the middle one by the squarish standing stones.
+            </p>
           </section>
-          <section class="paragraph">
-            <h3 class="heading paragraph__title  item--margined">Lying rocks</h3>
-            <figure class="paragraph__figure figure__container--unity">
-              <img src="resources/images/ryoanji-middle-left.jpg" alt="The front view of the middle-left group of two rocks in Ryoan-ji Zen Garden">
-              <img src="resources/images/ryoanji-second-right.jpg" alt="The front view of the second-from-right group of two rocks in Ryoan-ji Zen Garden">
-              <img src="resources/images/ryoanji-rightmost.jpg" alt="The front view of the rightmost group of three rocks in Ryoan-ji Zen Garden">
-            </figure>
-            <p class="paragraph__lines  item--margined">The middle left, the middle right, and the rightmost groups of stones are all connected by the shape of lying rocks that look like the back of beasts.</p>
+          <section class="page__subsection">
+            <h3 class="subsection__title
+                       page__h3--above-image
+                       page__element--padded">
+              Lying rocks
+            </h3>
+            <div class="figure__filter-container--spread
+                        middle-left--compare">
+              <figure class="figure__container
+                             figure__container--unity
+                             figure__container--small
+                             middle-left__non-text">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-middle-left.jpg"
+                     alt="The front view of the middle-left group of two rocks in Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <div class="figure__filter-container--spread
+                        middle-right--compare">
+              <figure class="figure__container
+                             figure__container--unity
+                             figure__container--small
+                             middle-right__non-text">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-second-right.jpg"
+                     alt="The front view of the second-from-right group of two rocks in Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <div class="figure__filter-container--spread
+                        rightmost--compare">
+              <figure class="figure__container
+                             figure__container--unity
+                             figure__container--small
+                             rightmost__non-text">
+                <img class="figure__image"
+                     src="resources/images/ryoanji-rightmost.jpg"
+                     alt="The front view of the rightmost group of three rocks in Ryoan-ji Zen Garden">
+              </figure>
+            </div>
+            <p class="page__text--below-image
+                      page__element--padded">
+              The middle left, the middle right, and the rightmost groups of stones are all connected by the shape of lying rocks that look like the back of beasts.
+            </p>
           </section>
+          <div class="page__element--padded">
+            <hr class="divider">
+            <p class="paragraph
+                      page__paragraph--above-paragraph">
+              The unity achieved by these similarities across the groups of rocks calms us down. If all these rocks took completely different shapes, we would be unable to relax at all and reluctant to accept the merit of having no emphasis in our mind.
+            </p>
+            <p class="page__paragraph--above-section">
+              The similarities are subtle, however. They never assert themselves at the center of the stage. The main character here is the lack of emphasis. The similarities of rock shapes are just the supporting actors, and they are good ones.
+            </p>
+          </div>
         </section>
-        <section class="section--after-paragraph">
-          <h2 class="heading section__title item--optically-aligned  item--margined">
-            Unity to calm us down
+        <section class="page__section
+                        section--text-only">
+          <h2 class="section__title
+                     page__element--padded
+                     section__title--stone">
+            Garden as a Reminder
           </h2>
-          <p class="section__paragraph section__paragraph--first item--margined">
-            The unity achieved by these similarities across the groups of rocks calms us down. If all these rocks took completely different shapes, we would be unable to relax at all and reluctant to accept the merit of having no emphasis in our mind.
-          </p>
-          <p class="section__paragraph  item--margined">
-            The similarities are subtle, however. They never assert themselves at the center of the stage. The main character here is the lack of emphasis. The similarities of rock shapes are just the supporting actors, and they are good ones.
-          </p>
-        </section>
-        <section class="section--after-paragraph">
-          <h2 class="heading section__title item--optically-aligned  item--margined">
-            End result: serenity
-          </h2>
-          <p class="section__paragraph section__paragraph--first item--margined">
+          <p class="page__paragraph--below-image
+                    page__paragraph--above-paragraph
+                    page__element--padded">
             Ryoan-ji Rock Garden manages both to place no emphasis and to achieve the overall unity, creating the serenity that echoes the preaching of zen: the key for living a happy life is not to be preoccupied with one particular thing.
           </p>
-          <p class="section__paragraph item--margined">
+          <p class="page__paragraph--above-section
+                    page__element--padded">
             It is so easy to forget this simple principle of happiness in our everyday life. Whenever I get preoccupied too much with my unfulfilled desires, I pay a visit to Ryoan-ji Rock Garden, which has been there since the 16th century to remind us of an ideal way of life.
           </p>
         </section>
-        <footer class="section--after-paragraph">
-          <h2 class="heading section__title item--margined">Tips for your visit</h2>
-          <p class="section__paragraph section__paragraph--first item--margined">
+        <aside class="page__section">
+          <h2 class="section__title
+                     page__element--padded
+                     section__title--red">
+            Tips for your visit
+          </h2>
+          <p class="page__paragraph--below-image
+                    page__paragraph--above-paragraph
+                    page__element--padded">
             If this article makes you feel like visiting Ryoan-ji temple, I would suggest the following:
           </p>
-          <p class="section__paragraph  item--margined">
+          <p class="page__paragraph--above-paragraph
+                    page__element--padded">
             Arrive in the early morning when the temple opens its gate (8am from March to November, 8:30am from December to February). Sit down in the viewpoint as described above. Observe how the rising sun constantly changes its way to illuminate the garden as the time passes by (that is, no fixation on a particular moment).
           </p>
-          <p class="section__paragraph  item--margined">
+          <p class="page__paragraph--above-paragraph
+                    page__element--padded">
             By 10am, a flock of tourists start arriving and counting how many rocks there are (which is so off the point about this garden). That is the time to leave and take a stroll around the pond garden outside (which you will realize also avoids creating any focal point).
           </p>
-          <p class="section__paragraph  item--margined">
-            Ryoan-ji temple's official website explains <a href="http://www.ryoanji.jp/smph/eng/rode/index.html">how to get there</a>.
+          <p class="page__paragraph--above-section
+                    page__element--padded">
+            Ryoan-ji temple's official website explains <a class="link" href="http://www.ryoanji.jp/smph/eng/rode/index.html">how to get there</a>.
           </p>
+        </aside>
+        <footer class="author
+                       page__element--padded">
+          Written, photographed, and designed by Masa Kudamatsu in 2018.
         </footer>
       </article>
     </main>
-    <aside class="author item--margined">
-      Written, photographed, and designed by Masa Kudamatsu in 2018.
-    </aside>
-    <footer class="ichimonji">
-    </footer>
-
     <!-- jQuery Core 3.3.1 minified, obtained from https://code.jquery.com/ on 30 April 2018 -->
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
