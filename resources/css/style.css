@@ -1,0 +1,407 @@
+/* Base font size (see GitHub Issue #43 for rationale)*/
+:root {
+  font-size: 1.297rem;
+}
+@media only screen and (max-width: 22.1875rem) { /* = 355px / 16px */
+  :root {
+    font-size: 1.2rem;
+  }
+}
+
+.page {
+  /* Body-text font */
+  font: 500 1rem/1.5 'Cormorant Garamond', serif;
+  /* See GitHub issue #24 for the rationale of line-height */
+  /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
+  /* Measure */
+  hyphens: auto;
+  max-width: 34em; /* Dicated by the photo width in the Similar Shapes section */
+  /* min-width: 15em; */
+  }
+
+/* Horizontal margins */
+.page__element--padded {
+  padding-left: 2.4937rem;
+  padding-right: 2.4937rem;
+}
+
+/* Vertical margins */
+.page__title {
+  padding-bottom: 1.3974rem; /* For bottom margin to equal the vertical margin between paragraph (34.5px) */
+  padding-top: 1.8673rem; /* For top margin to equal side margin (51.75px), taking into account the top 13px space of 70px font-size of Cormorant SC. i.e.  (51.75px-13px)/20.752px */
+}
+.page__paragraph--below-image { /* Below section title as well */
+  padding-top: 1.2669rem;
+}
+.page__paragraph--above-paragraph {
+  padding-bottom: 0.8433em; /* GitHub issue #46 for rationale */
+}
+.page__paragraph--above-section {
+  padding-bottom: 2.0482rem; /* To make the space equal to the side margin of 51.75px */
+}
+.page__text--above-image {
+  padding-bottom: 0.6837rem; /* to match the space between lines (23px) */
+}
+.page__paragraph--above-subsection {
+  padding-bottom:  1.1083rem; /* to match the space between paragraphs (34.5px) */
+}
+.page__h3--above-image {
+  padding-bottom: 0.3554rem;
+}
+.page__text--below-image {
+  padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
+}
+
+/* Title block */
+.title__background {
+  background-color: hsla(142, 97%, 24%, .90);
+  background-image: linear-gradient(30deg,
+    hsla(0,0%,100%,0) 0,
+    hsla(0,0%,100%,.5) 55%,
+    hsla(0,0%,100%,.5) 65%,
+    hsla(0,0%,100%,0));
+  color: #eee;
+}
+.title__text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font: 700 1.5rem/1 'Cormorant SC', serif;
+}
+.title__text--big {
+  font-size: 3.375rem;
+  text-indent: -0.2rem; /* to left-align with the line below */
+}
+.title__text--small {
+  letter-spacing: 0.01rem; /* to edge-align with RYOAN above */
+}
+@media only screen and (max-width: 22.1875rem) { /* = 355px / 16px */
+  .title__text {
+    font-size: 1.25rem;
+  }
+  .title__text--big {
+    font-size: 2.8125rem;
+  }
+  .title__text--small {
+    letter-spacing: 0.0083rem; /* to edge-align with RYOAN above */
+  }
+  .page__title {
+    padding-bottom: 1.469rem; /* For bottom margin to equal the vertical margin between paragraph (34.5px) */
+    padding-top: 1.9516rem; /* For top margin to equal side margin (51.75px) */
+  }
+}
+
+/* Section title block */
+.section__title {
+  font: 700 1.5rem/1.26 'Cormorant', serif;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  text-indent: -0.04em; /* Optical alignment with paragraphs */
+}
+.section__title--stone {
+  background-color: hsla(193, 50%, 26%, .90);
+  background-image: linear-gradient(35deg,
+    hsla(0,0%,100%,0) 0,
+    hsla(0,0%,100%,.5) 55%,
+    hsla(0,0%,100%,.5) 65%,
+    hsla(0,0%,100%,0));
+  color: #eee;
+}
+.section__title--green {
+  background-color: hsla(142, 97%, 24%, .90);
+  background-image: linear-gradient(165deg,
+    hsla(0,0%,100%,0) 0,
+    hsla(0,0%,100%,.5) 55%,
+    hsla(0,0%,100%,.5) 65%,
+    hsla(0,0%,100%,0));
+  color: #eee;
+}
+.section__title--red {
+  background-color: #b01c21; /* Obtained by brightening the brown color of Altamira cave painging of Bison to a value of 40% */
+  background-image: linear-gradient(165deg,
+    hsla(0,0%,100%,0) 0,
+    hsla(0,0%,100%,.5) 55%,
+    hsla(0,0%,100%,.5) 65%,
+    hsla(0,0%,100%,0));
+  color: #eee;
+}
+.title__line2 {
+  white-space: nowrap; /* To prevent a line break for narrow screens */
+}
+
+/* Subsection Title Block */
+.subsection__title {
+  color: hsla(193, 50%, 26%, .90);
+  font: 700 1.25rem/1 'Cormorant', serif;
+  text-indent: -0.03em; /* Optical alignment with paragraphs */
+}
+
+/* Figures */
+.figure__container {
+  overflow: hidden; /* Make the image size responsive while not exceeding its original size */
+}
+.figure__image {
+  display: block;
+  height: auto;
+  margin: 0 auto; /* Center-align the image when the screen width exceeds its width */
+  max-width: 100%;
+}
+.figure__filter-container--spread{
+  position: relative;
+}
+.figure__container--spread::before,
+.figure__container--unity::before {
+  /* https://stackoverflow.com/questions/29315635/apply-soft-edges-to-image-using-css */
+  box-shadow: inset 0px 12px 6px -6px rgba(255,255,255,1),
+              inset 0px -12px 6px -6px rgba(255,255,255,1);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.figure__filter-container--no-spread {
+  margin-left: -0.2rem;
+  position: relative;
+}
+.figure__container--no-spread::before {
+  box-shadow: inset 0px 0px 6px 6px rgba(255,255,255,1);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* Floorplan */
+/* Media querry deals with narrower screens, not wider screens, because otherwise it is difficult to draw side borders and add side margins outside the border for wider screens */
+.figure__container--floorplan {
+  border: 1px solid hsla(193, 50%, 26%, .20);
+  padding: 0.75rem;
+}
+.figure__caption--floorplan {
+  font: 700 0.85rem/1.2 'Cormorant SC', serif;
+  margin-right: 5px; /* Align with the right-edge of the floor plan */
+  padding-top: 0.5rem;
+  text-align: right;
+}
+@media only screen and (max-width: 497px) { /* Image width is 497px */
+  .figure__filter-container--floorplan {
+    padding-left: 0; /* Override the horizontal margins set above */
+    padding-right: 0; /* Override the horizontal margins set above */
+  }
+  .figure__container--floorplan {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* Text decorations */
+
+.link {
+  color: #b01c21;
+}
+
+.message__container {
+  margin: 2.4576rem 0;
+  /* Double the space between paragraphs */
+  text-align: center;
+}
+.message {
+  font-style: italic;
+  font-weight: 700;
+}
+.message__line2,
+.message__line3 {
+  white-space: nowrap;
+}
+
+.divider {
+  border: none;
+  margin: 0.8915rem 0 0.2168rem 0;
+  /* margin-top makes the space from the previous paragraph's baseline to the top of asterisks equal to 34.5px. maring-bottom makes the space from the bottom of asterisks to the top of X-HEIGHT equal to 34.5px. */
+}
+.divider--above-capital {
+  margin-bottom: 0.4577rem;
+  /* Makes the space to the top of a CAPITAL letter equal to 34.5px. */
+}
+.divider::before {
+    color: hsla(193, 50%, 26%, .90);
+    content: '* * *';
+    display: block;
+    text-align: center;
+}
+
+/* Footer */
+.author {
+  background-color: hsla(142, 97%, 24%, .90);
+  background-image: linear-gradient(30deg,
+    hsla(0,0%,100%,0) 0,
+    hsla(0,0%,100%,.5) 55%,
+    hsla(0,0%,100%,.5) 65%,
+    hsla(0,0%,100%,0));
+  color: #eee;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+/* Tablets */
+@media only screen and (min-width: 44.098rem) { /* Maximum measure 34rem * base font size 1.297rem */
+  :root {
+    font-size: 1.513rem;
+  }
+  .title__background {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    color: #101000;
+    position: absolute;
+    top: -10rem; /* To prevent the title from flashing at the top before JavaScript sets its position */
+    z-index: 5;
+  }
+  .title__text { /* To remove the line break */
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .title__text--small {
+    padding-left: 0.3em; /* To insert a word space */
+  }
+  .figure__container--small {
+    max-width: 705px; /* the middle-right rock cluster photo cannot be wider than this size */
+  }
+  .middle-left {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-left__non-text,
+  .middle__non-text,
+  .middle-right__non-text {
+    width: 60%;
+    max-width: 15rem;
+  }
+  .middle-left__text {
+    max-width: 15rem;
+    width: 60%;
+  }
+  .middle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .middle__title,
+  .middle-right__title,
+  .rightmost__title {
+    padding-right: 0.25rem; /* To right-align with the image below */
+    text-align: right;
+  }
+  .middle__text {
+    max-width: 15rem;
+    width: 60%;
+  }
+  .middle-right {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-right__text {
+    max-width: 15rem;
+    width: 60%;
+  }
+  .leftmost {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  .leftmost__non-text {
+    width: 75%;
+  }
+  .leftmost__text {
+    width: 75%;
+  }
+  .rightmost {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+  .rightmost__non-text {
+    width: 75%;
+  }
+  .rightmost__text {
+    width: 75%;
+  }
+
+  .leftmost--compare {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4937rem;
+  }
+  .rightmost--compare {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4937rem;
+  }
+  .middle--compare {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4937rem;
+  }
+  .middle-left--compare {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4937rem;
+  }
+  .middle-right--compare {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4937rem;
+  }
+
+  .figure__container--unity::before {
+    box-shadow: inset 0px 0px 6px 6px rgba(255,255,255,1);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 51.442rem) {  /* Maximum measure 34rem * base font size 1.513rem */
+  :root {
+    font-size: 1.729rem;
+    /* 1.513 x (24px/21px) */
+  }
+  .page {
+    background-color: #f9f9f9;
+    max-width: 100%;
+  }
+  .top,
+  .page__section {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 34rem;
+  }
+}
+
+/* Header and Footer */
+.ichimonji {
+  background-color: #BFC0C4; /* fall back for Opera Mini */
+  background-image:
+    radial-gradient(circle closest-side, transparent 90%, #f2dba6 91%, transparent),
+    radial-gradient(circle closest-side, #BFC0C4 90%, #f2dba6 91%, #BFC0C4); /* Higher than these percentages will create noticeable dots at the intersection of four circles */
+  background-size: 0.7rem 0.7rem; /* Circles won't be recognizable if smaller than these values. The feel of textile will lose if larger than these values */
+  background-position: 0 0, 0.35rem 0.35rem; /* The second pair of values should be half as large as the background-size value so that the grid of circles overlaps just in halfway */
+  height: 2rem;
+  width: 100%;
+  }
