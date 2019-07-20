@@ -1,8 +1,8 @@
 var object = {};
 // const = ;
 
-// Carousel
 $(document).ready(function() {
+  // Carousel
   $('.carousel').slick({
     arrows: false,
     autoplay: true,
@@ -11,33 +11,29 @@ $(document).ready(function() {
   });
 });
 
-// Parallax
+const positionTitle = () => {
+  const screenWidth = $(window).width();
+  if (screenWidth > 705) {
+    const titleHeight = $('.title__background').innerHeight();
+    const topImageHeight = $('.title__image').innerHeight();
+    const offsetValueTop = topImageHeight - titleHeight;
+    const topMarginLeft = $('.top').css('marginLeft');
+    $('.title__background').offset({
+      top: offsetValueTop,
+      left: topMarginLeft
+    });
+  } else {
+    return;
+  }
+};
 
-// var parallaxElements = $('.parallax'),
-//     parallaxQuantity = parallaxElements.length;
-//
-// $(window).on('scroll', function() {
-//   window.requestAnimationFrame(function() {
-//     for (var i = 0; i < parallaxQuantity; i++) {
-//       var currentElement = parallaxElements.eq(i);
-//       // Record how much has been scrolled (the number of pixels that are hidden from view above)
-//       var scrolled = $(window).scrollTop();
-//
-//       currentElement.css({
-//         'transform': 'translate3d(0, '+scrolled * 1 + 'px, 0)'
-//       });
-//     }
-//   });
-// });
-
-// jQuery
 $(document).ready(function() {
-  // Here write event handers
+  // When first loaded
+  positionTitle();
+  // When window resized
+  $(window).resize(() => {
+    window.setTimeout(() => {
+      positionTitle();
+    }, 200);
+  });
 });
-
-// Define functions
-object.Function1 = function() {
-};
-
-object.Function2 = function() {
-};

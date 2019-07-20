@@ -7,11 +7,6 @@
     font-size: 1.2rem;
   }
 }
-@media only screen and (min-width: 1024px) {
-  :root {
-    font-size: 1.513rem;
-  }
-}
 
 .page {
   /* Body-text font */
@@ -35,23 +30,23 @@
   padding-bottom: 1.3974rem; /* For bottom margin to equal the vertical margin between paragraph (34.5px) */
   padding-top: 1.8673rem; /* For top margin to equal side margin (51.75px), taking into account the top 13px space of 70px font-size of Cormorant SC. i.e.  (51.75px-13px)/20.752px */
 }
-.page__paragraph--below-image {
+.page__paragraph--below-image { /* Below section title as well */
   padding-top: 1.2669rem;
 }
-.page__paragraph--below-paragraph {
-  padding-top: 0.8433em; /* GitHub issue #46 for rationale */
+.page__paragraph--above-paragraph {
+  padding-bottom: 0.8433em; /* GitHub issue #46 for rationale */
 }
-.page__section {
-  padding-top: 2.0482rem; /* To make the space equal to the side margin of 51.75px */
+.page__paragraph--above-section {
+  padding-bottom: 2.0482rem; /* To make the space equal to the side margin of 51.75px */
 }
-.page__figure--below-paragraph {
-  margin-top: 0.6837rem; /* to match the space between lines (23px) */
+.page__text--above-image {
+  padding-bottom: 0.6837rem; /* to match the space between lines (23px) */
 }
-.page__subsection {
-  padding-top: 1.1083rem; /* to match the space between paragraphs (34.5px) */
+.page__paragraph--above-subsection {
+  padding-bottom:  1.1083rem; /* to match the space between paragraphs (34.5px) */
 }
-.page__figure--below-h3 {
-  margin-top: 0.3554rem;
+.page__h3--above-image {
+  padding-bottom: 0.3554rem;
 }
 .page__text--below-image {
   padding-top: 0.25rem; /* 0.5rem space between the image and the text below: 0.25 + (x - 1)/2 */
@@ -68,11 +63,14 @@
   color: #eee;
 }
 .title__text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
   font: 700 1.5rem/1 'Cormorant SC', serif;
-  text-indent: -0.2rem;
 }
 .title__text--big {
   font-size: 3.375rem;
+  text-indent: -0.2rem; /* to left-align with the line below */
 }
 .title__text--small {
   letter-spacing: 0.01rem; /* to edge-align with RYOAN above */
@@ -245,18 +243,153 @@
     hsla(0,0%,100%,.5) 65%,
     hsla(0,0%,100%,0));
   color: #eee;
-  margin-top: 1.2rem;
   padding-bottom: 1.25rem;
   padding-top: 1.25rem;
 }
 
-/* Tablets (480px is the widest mobile device, according to https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png) */
-@media only screen and (min-width: 480px) {
+/* Tablets */
+@media only screen and (min-width: 44.098rem) { /* Maximum measure 34rem * base font size 1.297rem */
+  :root {
+    font-size: 1.513rem;
+  }
+  .title__background {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    color: #101000;
+    position: absolute;
+    top: -10rem; /* To prevent the title from flashing at the top before JavaScript sets its position */
+    z-index: 5;
+  }
+  .title__text { /* To remove the line break */
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .title__text--small {
+    padding-left: 0.3em; /* To insert a word space */
+  }
+  .figure__container--small {
+    max-width: 705px; /* the middle-right rock cluster photo cannot be wider than this size */
+  }
+  .middle-left {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-left__non-text,
+  .middle__non-text,
+  .middle-right__non-text {
+    width: 60%;
+    max-width: 15rem;
+  }
+  .middle-left__text {
+    max-width: 15rem;
+    width: 60%;
+  }
+  .middle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .middle__title,
+  .middle-right__title,
+  .rightmost__title {
+    padding-right: 0.25rem; /* To right-align with the image below */
+    text-align: right;
+  }
+  .middle__text {
+    max-width: 15rem;
+    width: 60%;
+  }
+  .middle-right {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-right__text {
+    max-width: 15rem;
+    width: 60%;
+  }
+  .leftmost {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+  .leftmost__non-text {
+    width: 75%;
+  }
+  .leftmost__text {
+    width: 75%;
+  }
+  .rightmost {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+  .rightmost__non-text {
+    width: 75%;
+  }
+  .rightmost__text {
+    width: 75%;
+  }
 
+  .leftmost--compare {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4937rem;
+  }
+  .rightmost--compare {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2.4937rem 0;
+  }
+  .middle--compare {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2.4937rem 0;
+  }
+  .middle-left--compare {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.4937rem;
+  }
+  .middle-right--compare {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2.4937rem 0;
+  }
+  .rightmost--compare {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2.4937rem 0;
+  }
 }
 
-/* Desktops (1024px is the widest tablet in landscape orientation according to https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png) */
-@media only screen and (min-width: 1024px) {
+/* Desktop */
+@media only screen and (min-width: 51.442rem) {  /* Maximum measure 34rem * base font size 1.513rem */
+  :root {
+    font-size: 1.729rem;
+    /* 1.513 x (24px/21px) */
+  }
+  .page {
+    background-color: #f9f9f9;
+    max-width: 100%;
+  }
+  .top,
+  .page__section {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 34rem;
+  }
+  .figure__container--spread::before {
+    display: none;
+  }
 }
 
 /* Header and Footer */
