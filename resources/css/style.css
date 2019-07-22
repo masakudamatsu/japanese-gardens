@@ -18,7 +18,7 @@
   hyphens: auto; /* see https://caniuse.com/#search=hyphens */
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
-  max-width: 34em; /* Dicated by the photo width in the Similar Shapes section */
+  max-width: 34rem; /* Dicated by the photo width in the Similar Shapes section */
   /* min-width: 15em; */
   }
 @media only screen and (min-width: 1024px) { /* iPad Pro, laptops, desktops */
@@ -42,7 +42,7 @@
   padding-top: 1.2669rem;
 }
 .page__paragraph--above-paragraph {
-  padding-bottom: 0.8433em; /* GitHub issue #46 for rationale */
+  padding-bottom: 0.8433rem; /* GitHub issue #46 for rationale */
 }
 .page__paragraph--above-section {
   padding-bottom: 2.0482rem; /* To make the space equal to the side margin of 51.75px */
