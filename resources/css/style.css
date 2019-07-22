@@ -252,12 +252,15 @@
   :root {
     font-size: 1.513rem;
   }
+  .title__container { /* Place the title text at the bottom of the carousel image */
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .title__background {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     color: #101000;
     position: absolute;
-    top: -10rem; /* To prevent the title from flashing at the top before JavaScript sets its position */
     z-index: 5;
   }
   .title__text { /* To remove the line break */
