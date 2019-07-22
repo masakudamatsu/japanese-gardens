@@ -1,6 +1,5 @@
 var object = {};
 // const = ;
-
 $(document).ready(function() {
   // Carousel
   $('.carousel').slick({
@@ -9,4 +8,8 @@ $(document).ready(function() {
     autoplaySpeed: 3000,
     fade: true
   });
+});
+
+$(window).on('load', function() {
+  $('.loading').fadeOut();
 });
