@@ -15,7 +15,9 @@
   /* See GitHub issue #24 for the rationale of line-height */
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
   /* Measure */
-  hyphens: auto;
+  hyphens: auto; /* see https://caniuse.com/#search=hyphens */
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
   max-width: 34em; /* Dicated by the photo width in the Similar Shapes section */
   /* min-width: 15em; */
   }
