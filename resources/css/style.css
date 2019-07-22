@@ -2,7 +2,7 @@
 :root {
   font-size: 1.297rem;
 }
-@media only screen and (max-width: 22.1875rem) { /* = 355px / 16px */
+@media only screen and (max-width: 22.1875em) { /* = 355px / 16px */
   :root {
     font-size: 1.2rem;
   }
@@ -15,11 +15,13 @@
   /* See GitHub issue #24 for the rationale of line-height */
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
   /* Measure */
-  hyphens: auto;
-  max-width: 34em; /* Dicated by the photo width in the Similar Shapes section */
+  hyphens: auto; /* see https://caniuse.com/#search=hyphens */
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  max-width: 34rem; /* Dicated by the photo width in the Similar Shapes section */
   /* min-width: 15em; */
   }
-@media only screen and (min-width: 1024px) { /* iPad Pro, laptops, desktops */
+@media only screen and (min-width: 64em) { /* iPad Pro, laptops, desktops (1024px / 16px) */
   .page {
     font-weight: 500;
   }
@@ -40,7 +42,7 @@
   padding-top: 1.2669rem;
 }
 .page__paragraph--above-paragraph {
-  padding-bottom: 0.8433em; /* GitHub issue #46 for rationale */
+  padding-bottom: 0.8433rem; /* GitHub issue #46 for rationale */
 }
 .page__paragraph--above-section {
   padding-bottom: 2.0482rem; /* To make the space equal to the side margin of 51.75px */
@@ -81,7 +83,7 @@
 .title__text--small {
   letter-spacing: 0.01rem; /* to edge-align with RYOAN above */
 }
-@media only screen and (max-width: 22.1875rem) { /* = 355px / 16px */
+@media only screen and (max-width: 22.1875em) { /* = 355px / 16px */
   .title__text {
     font-size: 1.25rem;
   }
@@ -196,7 +198,7 @@
   color: rgb(100,100,100);
 }
 
-@media only screen and (max-width: 497px) { /* Image width is 497px */
+@media only screen and (max-width: 31.0625em) { /* Image width is 497px, divided by 16px */
   .figure__filter-container--floorplan {
     padding-left: 0; /* Override the horizontal margins set above */
     padding-right: 0; /* Override the horizontal margins set above */
@@ -268,7 +270,7 @@
 
 
 /* Tablets */
-@media only screen and (min-width: 44.098rem) { /* Maximum measure 34rem * base font size 1.297rem */
+@media only screen and (min-width: 44.098em) { /* Maximum measure 34rem * base font size 1.297rem */
   :root {
     font-size: 1.513rem;
   }
@@ -400,7 +402,7 @@
 }
 
 /* Desktop */
-@media only screen and (min-width: 51.442rem) {  /* Maximum measure 34rem * base font size 1.513rem */
+@media only screen and (min-width: 51.442em) {  /* Maximum measure 34rem * base font size 1.513rem */
   :root {
     font-size: 1.729rem;
     /* 1.513 x (24px/21px) */
