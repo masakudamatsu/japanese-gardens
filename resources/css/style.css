@@ -11,7 +11,7 @@
 .page {
   /* Body-text font */
   color: rgb(0,0,0);
-  font: 500 1rem/1.5 'Cormorant Garamond', serif;
+  font: 600 1rem/1.5 'Cormorant Garamond', serif;
   /* See GitHub issue #24 for the rationale of line-height */
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
   /* Measure */
@@ -19,6 +19,11 @@
   max-width: 34em; /* Dicated by the photo width in the Similar Shapes section */
   /* min-width: 15em; */
   }
+@media only screen and (min-width: 1024px) { /* iPad Pro, laptops, desktops */
+  .page {
+    font-weight: 500;
+  }
+}
 
 /* Horizontal margins */
 .page__element--padded {
