@@ -12,4 +12,5 @@ $(document).ready(function() {
 
 $(window).on('load', function() {
   $('.loading').fadeOut();
+  $('.main').fadeIn();
 });
