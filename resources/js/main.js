@@ -11,6 +11,7 @@ $(document).ready(function() {
 });
 
 $(window).on('load', function() {
-  $('.loading').fadeOut();
-  $('.main').fadeIn();
+  $('.loading').fadeOut('fast');
+  $('.main').fadeIn('slow');
+  // For Opera, the loading message is slow to fade out. So we make it fast while the content fades in slowly.
 });
