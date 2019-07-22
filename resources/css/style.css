@@ -10,6 +10,7 @@
 
 .page {
   /* Body-text font */
+  color: rgb(0,0,0);
   font: 500 1rem/1.5 'Cormorant Garamond', serif;
   /* See GitHub issue #24 for the rationale of line-height */
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
@@ -128,7 +129,6 @@
 .title__line2 {
   white-space: nowrap; /* To prevent a line break for narrow screens */
 }
-
 /* Subsection Title Block */
 .subsection__title {
   color: hsla(193, 50%, 26%, .90);
@@ -200,8 +200,14 @@
 
 /* Text decorations */
 
-.link {
-  color: #b01c21;
+.link:link,
+.link:visited {
+  color: inherit; /* set the color to be the same as the body text */
+}
+
+.link:hover,
+.link:active {
+  color: hsla(193, 50%, 26%, .90);
 }
 
 .message__container {
