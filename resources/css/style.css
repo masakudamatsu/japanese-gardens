@@ -27,6 +27,13 @@
   }
 }
 
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+
 /* Horizontal margins */
 .page__element--padded {
   padding-left: 2.4937rem;
