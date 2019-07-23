@@ -23,12 +23,11 @@
 
     <!-- Link to CSS file -->
     <link href="resources/css/style.css" type="text/css" rel="stylesheet"/>
-
   </head>
 
   <body class="page">
     <div class="loading">
-      <p class="loading__text">Loading...</p>
+      <p class="loading__text"></p>
     </div>
     <main class="main">
       <article class="">
@@ -563,6 +562,10 @@
         </footer>
       </article>
     </main>
+    <script type="text/javascript">
+      document.getElementsByClassName("main")[0].classList.add("hidden");
+      document.getElementsByClassName("loading__text")[0].innerHTML = "Loading...";
+    </script>
     <!-- jQuery Core 3.3.1 minified, obtained from https://code.jquery.com/ on 30 April 2018 -->
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
