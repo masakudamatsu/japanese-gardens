@@ -14,10 +14,11 @@
   font: 600 1rem/1.5 'Cormorant Garamond', serif;
   /* See GitHub issue #24 for the rationale of line-height */
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
-  /* Measure */
-  hyphens: auto; /* see https://caniuse.com/#search=hyphens */
+  /* Enable hyphenation to prevent ragged right edges: see https://caniuse.com/#search=hyphens */
+  hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
+  /* Measure */
   max-width: 34rem; /* Dicated by the photo width in the Similar Shapes section */
   /* min-width: 15em; */
   }
