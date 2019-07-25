@@ -233,7 +233,7 @@
   /* Fallback for Opera Mini */
   background: hsla(193, 50%, 26%, .10);
   /* Customize the underline style (this overrides the fallback )*/
-  background: linear-gradient(to bottom, transparent 50%, hsla(193, 50%, 26%, .90) 50%, hsla(193, 50%, 26%, .90)) no-repeat 0 0.925em; /* 0.925em is the baseline height */
+  background: linear-gradient(to bottom, transparent 50%, hsla(193, 50%, 26%, .90) 50%, hsla(193, 50%, 26%, .90)) no-repeat 0 0.973em; /* 0.925em is the baseline height on MacOS. We add 1px or 1px/20.752px = 0.48em for iOS because the underline touches the baseline with 0.925em. */
   background-size: 100% 2px;
   /* set the color to be the same as the body text */
   color: inherit;
