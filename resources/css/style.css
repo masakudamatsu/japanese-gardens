@@ -232,9 +232,9 @@
 .link:visited {
   /* Fallback for Opera Mini */
   background: hsla(193, 50%, 26%, .10);
-  /* Customize the underline style */
-  background: linear-gradient(to bottom, hsla(193, 50%, 26%, .90), hsla(193, 50%, 26%, .90)) no-repeat 0 0.99em; /* Override the fallback */
-  background-size: 100% 1px;
+  /* Customize the underline style (this overrides the fallback )*/
+  background: linear-gradient(to bottom, transparent 50%, hsla(193, 50%, 26%, .90) 50%, hsla(193, 50%, 26%, .90)) no-repeat 0 0.925em; /* 0.925em is the baseline height */
+  background-size: 100% 2px;
   /* set the color to be the same as the body text */
   color: inherit;
   /* Remove the default underline */
@@ -249,7 +249,7 @@
 @media only screen and (max-width: 22.1875em) { /* = 355px / 16px */
   .link:link,
   .link:visited {
-    background-position: 0 1.05em;
+    /* background-position: 0 1.05em; */
   }
 }
 
@@ -305,10 +305,6 @@
 @media only screen and (min-width: 44.098em) { /* Maximum measure 34rem * base font size 1.297rem */
   :root {
     font-size: 1.513rem;
-  }
-  .link:link,
-  .link:visited {
-    background-position: 0 1.02em;
   }
   .title__container { /* Place the title text at the bottom of the carousel image */
     position: relative;
@@ -443,6 +439,12 @@
   :root {
     font-size: 1.729rem;
     /* 1.513 x (24px/21px) */
+  }
+  .link:link,
+  .link:visited {
+    /* Make the white space below the baseline and above the underline 2px high, instead of 1px high */
+    background-image: linear-gradient(to bottom, transparent 66%, hsla(193, 50%, 26%, .90) 66%, hsla(193, 50%, 26%, .90));
+    background-size: 100% 3px;
   }
   .page {
     background-color: #f9f9f9;
