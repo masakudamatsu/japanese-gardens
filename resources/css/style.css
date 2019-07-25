@@ -14,10 +14,11 @@
   font: 600 1rem/1.5 'Cormorant Garamond', serif;
   /* See GitHub issue #24 for the rationale of line-height */
   /* For the font property syntax, see https://developer.mozilla.org/en-US/docs/Web/CSS/font#Syntax */
-  /* Measure */
-  hyphens: auto; /* see https://caniuse.com/#search=hyphens */
+  /* Enable hyphenation to prevent ragged right edges: see https://caniuse.com/#search=hyphens */
+  hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
+  /* Measure */
   max-width: 34rem; /* Dicated by the photo width in the Similar Shapes section */
   /* min-width: 15em; */
   }
@@ -229,12 +230,27 @@
 
 .link:link,
 .link:visited {
-  color: inherit; /* set the color to be the same as the body text */
+  /* Fallback for Opera Mini */
+  background: hsla(193, 50%, 26%, .10);
+  /* Customize the underline style */
+  background: linear-gradient(to bottom, hsla(193, 50%, 26%, .90), hsla(193, 50%, 26%, .90)) no-repeat 0 0.99em; /* Override the fallback */
+  background-size: 100% 1px;
+  /* set the color to be the same as the body text */
+  color: inherit;
+  /* Remove the default underline */
+  text-decoration: none;
 }
 
 .link:hover,
 .link:active {
   color: hsla(193, 50%, 26%, .90);
+}
+
+@media only screen and (max-width: 22.1875em) { /* = 355px / 16px */
+  .link:link,
+  .link:visited {
+    background-position: 0 1.015em;
+  }
 }
 
 .message__container {
@@ -289,6 +305,10 @@
 @media only screen and (min-width: 44.098em) { /* Maximum measure 34rem * base font size 1.297rem */
   :root {
     font-size: 1.513rem;
+  }
+  .link:link,
+  .link:visited {
+    background-position: 0 1.02em;
   }
   .title__container { /* Place the title text at the bottom of the carousel image */
     position: relative;
