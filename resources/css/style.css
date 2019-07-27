@@ -246,13 +246,6 @@
   color: hsla(193, 50%, 26%, .90);
 }
 
-@media only screen and (max-width: 22.1875em) { /* = 355px / 16px */
-  .link:link,
-  .link:visited {
-    /* background-position: 0 1.05em; */
-  }
-}
-
 .message__container {
   margin: 2.4576rem 0;
   /* Double the space between paragraphs */
